@@ -1,72 +1,63 @@
-# Getting help
+# الحصول على المساعدة
 
-## Asking good questions
+## سؤال أسئلة جيدة
 
-With the exception of AnkiMobile, Anki and its support is provided free of
-charge, by people who generously volunteer their time. Please bear this in mind
-when posting - if you are rude and demanding, or have made no effort to solve
-the problem on your own, people are less likely to want to help you.
+باستثناء أنكي موبيل، أنكي ودعمه موفر مجانا من قبل ناس يتبرعون بوقتهم بكرم. يرجى تذكر هذا
+عند النشر؛ إذا كنت وقحا ومتطلّبا أو لم تبذل أي جهد لحل المشكلة بنفسك، فمن المرجح أن الناس لن يرغبوا في مساعدتك.
 
-Please start by trying to resolve the issue on your own:
+يرجى البدء بمحاولة حل المشكلة بنفسك:
 
-- Read the [getting started](https://docs.ankiweb.net/getting-started.html) section
-  of the manual, and check out the intro videos.
-- If you've encountered a bug, please follow [these
-  steps](https://faqs.ankiweb.net/when-problems-occur.html).
-- Use the search button on this page to search frequently asked questions.
-- Use the search button in the manual.
-- Use the search button on the forums. 
-- Google the issue.
+- اقرأ قسم [البدء](https://www.abdnh.net/anki-manual/getting-started.html)
+من دليل الاستخدام، واطلع على الفيديوهات التعريفية.
+- إذا صادفت عطلا في أنكي، يرجى تتبع [هذه الخطوات](./when-problems-occur.md).
+- استخدم زر البحث في هذه الصفحة للبحث في الأسئلة المتكررة.
+- استخدم زر البحث في دليل الاستخدام.
+- استخدم زر البحث في المنتديات.
+- ابحث في غوغل عن حل المشكلة.
 
-If you have tried the above and are still stuck, it's time to ask for help.
-When writing a post, please explain the problem you are having clearly, and in detail.
+إذا جربت كل الخطوات وما زلت تواجه مشكلة، فقد حان الوقت لطلب المساعدة. عند كتابة منشور،
+يرجى شرح المشكلة التي تواجهها بوضوع وتفصيل.
 
-Please avoid vague questions like:
+تجنب أسئلة مبهمة مثل:
 
-> "My Anki doesn't work, what should I do?"
+> "لا يعمل أنكي معي، ما الذي علي فعله؟"
 
-Instead, please provide as much detail as you can. For example:
+لكن وفر أكبر قدر مستطاع من التفاصيل. مثلا:
 
-> "When I double-click on the Anki icon, an error message pops up. I tried
-> searching for the error on Google, but couldn't find anything useful. I have
-> copied and pasted the error message to the bottom of my post. I followed the
-> steps on the 'When problems occur' page, but the error message does not go
-> away. What should I do?"
+> "عندما أنقر نقرا مزدوجا على أيقونة أنكي، تظهر رسالة خطأ. جربت البحث في غوغل عن الخطأ،
+> لكني لم أجد أي شيء مفيد. لقد نسخت الخطأ ولصقته أسفل المنشور. اتبعت الخطوات في صفحة
+> "عندما تحدث مشاكل"، لكن لم تذهب رسالة الخطأ. ما الذي علي فعله؟"
 
-This is a much better question. It tells us:
+هذا السؤال أفضل بكثير. إنه يخبرنا:
 
-- What you have tried.
-- What steps you are taking when the problem happens.
-- What problems/errors you are getting when things go wrong.
+- أنك حاولت.
+- ما الخطوات التي كنت تتبعها عندما حدثت المشكلة.
+- ما المشاكل/الأخطاء التي واجهتها.
 
-Knowing these things makes it much easier to answer your question.
+معرفة هذه الأموار تجعل الإجابة عن سؤالك أسهل بكثير.
 
-The user forums use a different login to AnkiWeb, so please create an
-account there if it's your first time.
+تستخدم منتديات المستخدمين نظام دخول مختلفا عن أنكي ويب، لذلك يرجى إنشاء حساب هناك إذا كانت
+هذه أول زيارة لك للمنتديات.
 
-Finally, please check out the [community
-guidelines](https://forums.ankiweb.net/faq).
+أخيرا، اطلع على [إرشادات المجتمع](https://forums.ankiweb.net/faq).
 
-## Anki Desktop (the computer version) and AnkiWeb
+## أنكي لسطح المكتب (نسخة الكمبيوتر) وأنكي ويب
 
-After reading the above section, please post on the
-[user forums](https://forums.ankiweb.net) for assistance.
+بعد قراءة القسم في الأعلى، يرجى النشر في [منتديات المستخدمين](https://forums.ankiweb.net) لطلب المساعدة.
 
-## AnkiMobile (iPhone/iPad)
+## أنكي موبيل (آيفون/آيباد)
 
-Please see [AnkiMobile's support page](https://docs.ankimobile.net).
+انظر [صفحة دعم أنكي موبيل](https://docs.ankimobile.net).
 
-## AnkiDroid (Android devices)
+## أنكيدرويد (أجهزة أندرويد)
 
-Please see [AnkiDroid's support page](https://docs.ankidroid.org/help.html).
+انظر [صفحة دعم أنكيدرويد](https://docs.ankidroid.org/help.html).
 
-## Private questions
+## الأسئلة الخاصة
 
-Where possible, please use the [user forums](https://forums.ankiweb.net) - you
-do not need to provide your full name, and your email address will only be
-visible to support staff/forum moderators. Questions posted on the user forums
-are likely to be answered faster, as they can be seen by more people.
+يرجى استخدام [منتديات المستخدمين](https://forums.ankiweb.net) حيثما أمكن.
+ليس عليك توفير اسمك الكامل، ولن يظهر بريدك الإلكتروني إلا لمديري المنتدى وكادر الدعم.
+الأسئلة المنشورة في منتديات الدعم يجاب عنها بشكل أسرع غالبا، لأن عددا أكبر من الناس يراها.
 
-If you need to write something that shouldn't be seen by the public, please
-create a [private ticket](https://anki.tenderapp.com/discussions/private) on the
-old support site.
+إذا كنت تريد كتابة شيء لا يجب أن يراه عامة الناس، يرجى إنشاء [منشور خاص](https://anki.tenderapp.com/discussions/private)
+في موقع الدعم القديم.
