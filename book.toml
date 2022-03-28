@@ -1,16 +1,17 @@
 [book]
-authors = ["Ankitects Pty Ltd and contributors"]
-language = "en"
+authors = ["Ankitects Pty Ltd ومتطوعون"]
+language = "ar"
 multilingual = false
 src = "src"
-title = "Frequently Asked Questions"
+title = "الأسئلة المتكررة"
 
 [build]
 create-missing = true
 
 [output.html]
 no-section-label = true
-git-repository-url = "https://github.com/ankitects/faqs/"
+git-repository-url = "https://github.com/abdnh/anki-faqs/"
+additional-css = ["css/rtl.css"]
 
 [output.linkcheck]
 optional = true
