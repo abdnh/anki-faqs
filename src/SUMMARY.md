@@ -1,7 +1,7 @@
 # Summary
 
 [الحصول على المساعدة](./getting-help.md)
-[When problems occur](./when-problems-occur.md)
+[عندما تحدث مشاكل](./when-problems-occur.md)
 [Restoring an Automatic Backup (Recovering from Data Loss)](./restoring-an-automatic-backup-recovering-from-data-loss.md)
 
 ---

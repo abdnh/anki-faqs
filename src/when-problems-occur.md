@@ -1,51 +1,63 @@
-# When problems occur
+# عندما تحدث مشاكل
 
-If after [following these steps](./getting-help.md#asking-good-questions) you still have problems, please try the following:
-
-**1. Restart Anki**
-
-Please close Anki, then start it again.
-
-If you are unable to close Anki because of an error message, you can either terminate Anki using your task manager, or restart your computer. Anki saves periodically, so you should not lose more than a few minutes of work in most circumstances.
-
-If the problem does not occur again, you can skip the following steps.
-
-**2. Check add-ons**
-
-Please close Anki, then start it again while holding down the shift key, which will disable any add-ons you have installed.
-
-If the problem goes away when add-ons are disabled, you can narrow down the culprit by disabling one or more add-ons, restarting Anki, and seeing if the problem goes away. If you have lots of them, you can select the top half of your add-ons in the Add-ons screen and disable them. If after restarting Anki, the problem is still there, try the other half instead. Once you’ve found the half that is causing the problem, divide that half into half again, and repeat. You should be able to narrow it down in around ~6 steps that way. 
-
-Alternatively, if you don’t need all the add-ons you have installed, you could start by disabling all the ones you don’t need, and seeing if that helps. Repeat the process trying different add-ons, until you discover which one is causing the problem.
-
-If the issue turns out to be an add-on, please report the issue to the add-on author.
-
-**3. Check your Anki version**
-
-These days, Anki shows its version in the error message. If you're using an old Anki, you can find the version you're using in the Help>About or Anki>About menu.
-
-If the version you're using is not the latest 2.1.x version published on <https://apps.ankiweb.net>, please close Anki, install the latest version, and then start Anki again to see if the problem has gone away.
-
-If you're using Linux, please make sure you can reproduce the error using the packaged version on the Anki website, as distros often distribute [broken versions](https://anki.tenderapp.com/kb/anki-ecosystem/third-party-linux-packages-and-source-builds-are-not-supported).
-
-**4. Check your database**
-
-After restarting Anki, please try the Tools>Check Database menu item to make sure your collection doesn't have any problems.
-
-**5. Restart your computer**
-
-Sometimes restarting your computer may help.
-
-**6. Change the Video Driver**
-
-On Windows and Linux, crashes and display issues can be caused by the video
-driver. Changing to a different video driver in the preferences screen or via
-the gldriver file may help. On Windows, make sure you try all three options.
-
-- [Windows](https://docs.ankiweb.net/platform/windows/display-issues.html)
-- [Linux](https://docs.ankiweb.net/platform/linux/display-issues.html)
+إذا تتبعت [هذه الخطوات](./getting-help.md#سؤال-أسئلة-جيدة) وما زلت تواجه مشاكل، يرجى محاولة التالي:
 
 
-**7. If the problem remains**
+**1. أعد تشغيل أنكي**
 
-If you're confirmed you are using the latest Anki version, and are still receiving errors when starting Anki while holding down the shift key, please [report the problem](./getting-help.md), including the next error you receive in your post.
+أغلق أنكي وشغله مجددا.
+
+إذا لم تكن قادرا على إغلاق أنكي بسبب رسالة خطأ، تستطيع إما إنهائه من خلال مدير المهام،
+أو إعادة تشغيل حاسوبك. يحفظ أنكي بياناته دوريا، لذلك لن تخسر أكثر من بضع دقائق من عملك في معظم الأحوال.
+
+إذا لم تحدث المشكلة مجددا، تستطيع تخطي الخطوات التالية.
+
+**2. افحص الإضافات**
+
+أغلق أنكي ثم شغله مجددا مع الضغط على زر shift لكي يتم إيقاف تفعيل أي إضافات لديك.
+
+إذا اختفت المشكلة عند إيقاف الإضافات، تستطيع حصر السبب بإيقاف إضافة واحدة أو أكثر،
+ثم إعادة تشغيل أنكي والتحقق مما إذا اختفت المشكلة.
+إذا كان لديك كثير من الإضافات، تستطيع تحديد النصف الأعلى من الإضافات في شاشة الإضافات وإيقافها.
+إذا ما زالت المشكلة بعد إعادة تشغيل أنكي، جرب النصف الآخر.
+حالما تجد النصف الذي يسبب المشكلة، اقسم ذاك النصف إلى قسمين مجددا، وكرر العملية.
+يجب أن تتمكن من حصر السبب في 6 خطوات تقريبا باستخدام هذه الطريقة.
+
+كحل بديل، إذا لم تكن بحاجة لكل الإضافة لديك، يمكنك إيقاف تفعيل ما لا تحتاجه والتحقق مما إذا كان هذا يحل المشكلة.
+كرر العملية مع إضافات مختلفة حتى تجد الإضافة التي تسبب المشكلة.
+
+إذا كان سبب المشكلة إضافة، يرجى إبلاغ مطورها.
+
+
+**3. تحقق من إصدار أنكي**
+
+يظهر هذه الأيام أنكي إصداره في رسالة الخطأ. إذا كنت تستخدم إصدارا قديما، تستطيع إيجاد
+الإصدار الذي تستخدمه من خلال قائمة مساعدة>حول أو أنكي>حول.
+
+إذا كان الإصدار الذي تستخدمه ليس آخر إصدار <span dir=ltr></2.1.x> منشور في <https://apps.ankiweb.net>،
+فيرجى إغلاق أنكي، وتنصيب آخر إصدار، ثم تشغيله مجددا والتحقق مما إذا ذهبت المشكلة.
+
+إذا كنت تستخدم لينكس، يجرى التأكد من أن المشكلة موجودة في الإصدار المنشور في موقع أنكي،
+لأن التوزيعات كثيرا ما تنشر [إصدارات معطوبة](https://anki.tenderapp.com/kb/anki-ecosystem/third-party-linux-packages-and-source-builds-are-not-supported).
+
+**4. افحص قاعدة البيانات**
+
+بعد إعادة تشغيل أنكي، جرب زر قائمة أدوات>فحص قاعدة البيانات للتأكد من أن المجموعة
+سليمة من المشاكل.
+
+**5. أعد تشغيل حاسوبك**
+
+أحيانا قد تساعد إعادة تشغيل الحاسوب.
+
+**6. غير معرف الفيديو**
+
+في ويندوز ولينكس، قد تحصل أعطال ومشاكل عرض بسبب معرف الفيديو. قد يساعد هنا
+تغيير معرف الفيديو من خلال شاشة التفضيلات أو ملف gldriver. جرب كل الخيارات الثلاثة في ويندوز.
+
+- [ويندوز](https://www.abdnh.net/anki-manual/platform/windows/display-issues.html)
+- [لينكس](https://www.abdnh.net/anki-manual/platform/linux/display-issues.html)
+
+**7. إذا استمرت المشاكل**
+
+إذا تأكدت من أنك تستخدم آخر إصدار وما زلت تواجه أخطاء عند بدء أنكي مع الضغط على
+زر shift، يرجى [الإبلاغ عن المشكلة](./getting-help.md) مع تضمين نص الخطأ في منشورك.
