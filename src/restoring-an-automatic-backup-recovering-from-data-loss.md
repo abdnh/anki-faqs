@@ -1,14 +1,16 @@
-# Restoring an Automatic Backup (Recovering from Data Loss)
+# الاسترجاع من نسخة احتياطية أوتوماتيكية (استعادة البيانات المفقودة)
 
-Sometimes your collection may become very damaged. For instance:
+قد يحصل أن تتضرر مجموعتك جدا. مثلا:
 
-- You accidentally deleted a card type or hundreds of cards and didn't notice in time to undo it.
-- Your collection has become corrupted.
-- There was a syncing error and you accidentally overwrote a large number of reviews that you did on another device.
-- ...or anything else that leaves you with lost data.
+- حذفت نوع بطاقة أو آلاف البطاقات بدون قصد ولم تلحظ ذلك في الوقت المناسب لكي تتراجع.
+- تلفت مجموعتك.
+- حصل خطأ مزامنة واستبدلت بالخطأ عددا كبيرا من المراجعات في جهاز آخر.
+- ...أو أي شيء يسبب لك فقدان بيانات
 
-Anki automatically backs up your collection every time you close Anki or sync (AnkiMobile backs up after fixed time intervals and before syncs), and by default it stores 30 backups. For information on restoring an automatic backup, please visit the relevant page:
+يأخذ أنكي نسخة احتياطية من مجموعتك في كل مرة تغلقه فيها أو تزامن
+(يأخذ أنكي موبيل نسخ احتياطية بعد فواصل زمنية ثابتة وقبل المزامنة)، ويحتفظ بـ 30 نسخة بشكل افتراضي.
+لمزيد من المعلومات حول الاسترجاع من نسخة احتياطية أوتوماتيكية، يرجى زيارة الصفحة المناسبة:
 
-- Restore a [backup made by Anki 2.1 on your computer](https://docs.ankiweb.net/files.html#backups)
-- Restore a [backup made by AnkiMobile](https://docs.ankimobile.net/preferences.html#backups)
-- Restore a [backup made by AnkiDroid](https://ankidroid.org/docs/manual.html#backups)
+- استعادة [نسخة احتياطية مأخوذة في أنكي 2.1 على حاسوبك](https://www.abdnh.net/anki-manual/files.html#النسخ-الاحتياطية).
+- استعادة [نسخة مأخوذة في أنكي موبيل](https://docs.ankimobile.net/preferences.html#backups).
+- استعادة [نسخة مأخوذة في أنكيدرويد](https://docs.ankidroid.org/manual-ar.html#backups).

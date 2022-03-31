@@ -2,7 +2,7 @@
 
 [الحصول على المساعدة](./getting-help.md)
 [عندما تحدث مشاكل](./when-problems-occur.md)
-[Restoring an Automatic Backup (Recovering from Data Loss)](./restoring-an-automatic-backup-recovering-from-data-loss.md)
+[الاسترجاع من نسخة احتياطية أوتوماتيكية (استعادة البيانات المفقودة)](./restoring-an-automatic-backup-recovering-from-data-loss.md)
 
 ---
 
