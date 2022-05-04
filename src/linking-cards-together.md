@@ -1,52 +1,38 @@
-# Can I link cards together?
+# هل أستطيع ربط البطاقات مع بعضها البعض؟
 
-Anki supports links between cards of a note, but not between unrelated
-cards. Imagine you are studying Japanese and aiming to be able to both
-recognize and reproduce the Japanese. You may enter the word "ookii",
-which means "big", and tell Anki to generate two cards - ookii→big and
-big→ookii.
+يدعم أنكي ربط بطاقات الملحوظة الواحدة مع بعضها، لكن ليس البطاقات من ملحوظات مختلفة.
+لنقل إنك تدرس اللغة اليابانية وتهدف لأن تصبح قادرا على فهم اليابانية والتحدث والكتابة بها.
+قد تدخل كلمة "ookii"، والتي تعني "كبير"، وتخبر أنكي بأن يولد بطاقتين، ookii←كبير و كبير←ookii.
 
-In the above situation Anki can space reviews of those two sibling cards
-out so that they don’t appear one after the other.
+في الحالة المذكورة آنفًا يستطيع أنكي أن يباعد بين مراجعات هذه البطاقات الشقيقة حيث
+لا تظهر بشكل متتالي.
 
-Some people want to extend this link between arbitrary cards. They want
-to be able to tell Anki "after showing me this card, show me that card",
-or "don’t show me that card until I know this card well enough". This
-might sound like a nice idea in theory, but in practice it is not
-practical.
+يريد بعض الناس تعزيز هذه الميزة للربط بين بطاقات عشوائية. يريدون القدرة على أن يقولوا لأنكي
+"بعد إظهار هذه البطاقة، أظهر تلك البطاقة"، أو "لا تظهر تلك البطاقة حتى أعرف هذه البطاقة بشكل جيد".
+قد تبدو هذه فكرة جيدة نظريًا، لكنها ليست عملية.
 
-For one, unlike the sibling card case above, you would have to define
-all the relations yourself. Entering new notes into Anki would become a
-complicated process, as you’d have to search through the rest of the
-deck and assign relationships between the old and new material.
+أولا، على عكس حالة البطاقات الشقيقة المذكورة آنفًا، سيكون عليك تعريف كل العلاقات بنفسك.
+سيصبح إدخال ملحوظات جديدة إلى أنكي عملية معقدة، حيث سيكون عليك البحث في باقي الرزمة
+وتعريف العلاقات بين المواد القديمة والجديدة.
 
-Secondly, remember that Anki is using an algorithm to determine when the
-optimum time to show you material again is. Adding constraints to card
-display that cause cards to display earlier or later than they were
-supposed to will make the spaced repetition system less effective,
-leading to more work than necessary, or forgotten cards.
+ثانيا، تذكر أن أنكي يستخدم خوارزمية لتحديد الوقت المثالي لإظهار المواد مجددا.
+إضافة قيود لعرض البطاقات تسبب بعرضها بوقت أبكر أو متأخر أكثر من الوقت المفترض أن تظهر فيه
+سيجعل نظام التكرار المتباعد أقل فعالية، ما يؤدي إلى بذل جهد أكثر مما هو ضروري، أو بطاقات منسية.
 
-The most effective way to use Anki is to make each note you see
-independent from other notes. Instead of trying to join similar words
-together, you’ll be better off if you can determine the differences
-between them. Synonyms are rarely completely interchangeable - they tend
-to have nuances attached, and it’s not unusual for a sentence to become
-strange if one synonym is replaced with another.
+الطريقة الأكثر فعالية لاستخدام أنكي هي بجعل كل ملحوظة تراها مستقلة عن الملحوظات الأخرى.
+بدلًا من محاولة ربط الكلمات المتشابهة معًا، من المفضل أن تميز الفروقات بينها.
+من النادر أن تحمل المترادفات المعنى نفسه تمامًا؛ إنها تميل لأن تملك فروق دقيقة،
+وليس من غير المعتاد أن تصبح جملة غريبة إذا تم استبدال كلمة بمرادفة لها.
 
-Continuing with the Japanese example earlier, imagine you want to learn
-the word "dekai", which also roughly translates to "big", but is a more
-colloquial expression. If you still want to review in both directions,
-you might make the English prompt of this word "big (more casual)". The
-further you progress in your language studies though, the more of a
-burden it becomes to define the differences between similar words, which
-is why cards asking you to produce a particular word are best left to
-the early stage of your studies. With a strong base vocabulary, moving
-towards recognition-based study makes more sense, as we all have a much
-larger passive vocabulary than our active vocabulary.
+لنكمل مع مثال اليابانية السابق، ولنقل إنك تريد تعلم كلمة "dekai"، والتي تُتَرجم
+إلى "كبير" تقريبًا، لكنها تعبير عامي أكثر. إذا كنت ما زلت تريد مراجعة البطاقة بكلا الجانبين،
+قد تجعل السؤال الإنجليزي لهذه الكلمة "كبير (أقل رسمية)". كلما تقدمت في دراستك للغة،
+أصبح عبء تمييز الفروقات بين الكلمات المتشابهة أكبر، وهذا هو السبب الذي يجعل من الأفضل
+ترك البطاقات التي تطلب منك تذكر كلمة محددة للمستويات الأولى من دراستك.
+مع خزينة مفردات قوية، تصبح الدراسة المبنية على التعرف معقولة أكثر، لأننا كلنا لدينا
+خزينة مفردات غير فعالة (passive) أكبر من خزينتنا الفعالة (active).
 
-As for ensuring that difficult material is introduced after easier
-material, a number of existing tools are available. New cards are by
-default introduced in the order they are added to the deck, so as long
-as the learning materials or sources of information you are using are
-adequately graded for your level, material should appear in order of
-easiness.
+بما يخص ترتيب المواد بحيث تأتي المواد الأصعب بعد المواد الأسهل، فهناك عدة أدوات متوفرة بهذا الخصوص.
+يتم عرض البطاقات الجديدة بالترتيب التي تضاف فيه إلى الرزمة بشكل افتراضي، لذلك طالما
+كانت المواد التعليمية أو المصادر التي تستخدمها مرتبة حسب المستوى، فيجب أن تظهر البطاقات
+حسب مستوى الصعوبة.
