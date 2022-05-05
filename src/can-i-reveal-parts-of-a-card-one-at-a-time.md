@@ -1,9 +1,19 @@
-# Can I reveal parts of a card one at a time?
+# هل أستطيع كشف أجزاء من بطاقة بأوقات مختلفة؟
 
-Typical flashcards, both on paper and in Anki, have a front and a back: the prompt or question is shown on the front and the answer on the back. Sometimes people want to add more steps to the answer. For instance, you might want to show the word in a foreign language on the front, then show a definition when you press the button once, then show an example sentence when you press it again, and so on.
+لبطاقات الاستذكار الاعتيادية، سواء الورقية أو في أنكي، جانبان أمامي وخلفي: يظهر السؤال
+في الأمام والجواب في الخلف. أحيانا يرغب الناس في إضافة خطوات إضافية للجواب. مثلًا،
+قد ترغب في إظهار كلمة أجنبية في الأمام، ثم تعريفها عندما تضغط الزر مرة، ثم جملة
+عندما تضغط الزر مجددًا، وهلم جرًا.
 
-This is generally not a good idea. The more complicated you make your cards, the more difficult they become to remember ([rule 4](http://www.supermemo.com/articles/20rules.htm)) and the less efficiently they can be scheduled. The difference between the amount of time it takes to learn and review a few complex cards and the amount of time it takes to learn a larger number of much simpler cards containing the same information can be stunning.
+ليست هذه فكرة جيدة عمومًا. كلما كانت بطاقاتك معقدة أكثر، كان تذكرها أصعب
+([القاعدة رقم 4](http://www.supermemo.com/articles/20rules.htm)) وكانت جدولتها أقل فعالية.
+الفرق بين الوقت المستغرق لتعلم بضع بطاقات معقدة ومراجعتها والوقت المستغرق لتعلم
+كمية كبيرة من البطاقات الأبسط بكثير والتي تحتوي المعلومات نفسها قد يكون مذهلًا.
 
-For this reason, Anki doesn't support having more than two sides per card. In our foreign-language words example, you might instead want to create multiple [card types](https://docs.ankiweb.net/templates/intro.html), so that you would be asked for each of the items *on separate cards* – one card could show you the word and ask for a definition, another could show the example sentence with the word missing and ask what word logically fits, and so on.
+لهذا السبب، لا يدعم أنكي إظهار أكثر من جانبين للبطاقة الواحدة. في مثال اللغة الأجنبية السابق،
+قد ترغب في إنشاء عدة [أنواع بطاقات](https://www.abdnh.net/anki-manual/templates/intro.html) كحل بديل،
+حيث تُسأل عن كل معلومة *في بطاقات منفصلة*، فمثلا قد تظهر لك بطاقة الكلمة وتطلب منك تعريفها،
+وقد تظهر بطاقة أخرى جملة مع فراغ مكان الكلمة وتسألك عن الكلمة المناسبة، وما إلى ذلك.
 
-In some cases, you might want to include extra non-essential information on a card without showing it until you need it. For this situation, Anki offers [hint fields](https://docs.ankiweb.net/templates/fields.html#hint-fields).
+في بعض الحالات، قد ترغب في تضمين معلومات غير أساسية في بطاقة بدون إظهارها إلا عندما تحتاجها.
+يوفر أنكي [الحقول التلميحية](https://www.abdnh.net/anki-manual/templates/fields.html#حقول-تلميحية) لهذه الحالة.
