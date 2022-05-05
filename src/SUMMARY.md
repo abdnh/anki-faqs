@@ -8,7 +8,7 @@
 
 # Cards and Notes
 
-- [Can I link cards together?](./linking-cards-together.md)
+- [هل أستطيع ربط البطاقات مع بعضها البعض؟](./linking-cards-together.md)
 - [Can I reveal parts of a card one at a time?](./can-i-reveal-parts-of-a-card-one-at-a-time.md)
 - [Card template has a problem](./card-template-has-a-problem.md)
 - [Cards are reversed / appearing twice](./cards-are-reversed-appearing-twice.md)
