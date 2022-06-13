@@ -51,7 +51,7 @@
 - [Resetting progress in a deck](./resetting-progress-in-a-deck.md)
 - [Settings for using Anki to prepare for a large exam](./settings-for-using-anki-to-prepare-for-a-large-exam.md)
 - [The Anki 2.1 scheduler](./the-anki-2.1-scheduler.md)
-- [The 2021 scheduler](./the-2021-scheduler.md)
+- [مجدول 2021](./the-2021-scheduler.md)
 - [Timezone handling changes](./timezone-handling-changes.md)
 - [What spaced repetition algorithm does Anki use?](./what-spaced-repetition-algorithm.md)
 

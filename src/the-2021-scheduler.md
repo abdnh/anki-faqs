@@ -1,176 +1,154 @@
-# 2021 Scheduler
+# مجدول 2021
 
-The 2021 scheduler ("v3") is an update to the [Anki 2.1
-scheduler](./the-anki-2.1-scheduler.md) ("v2"). It is
-currently in beta testing.
+مجدول سنة 2021 ("v3") هو تحديث [لمجدول أنكي 2.1](./the-anki-2.1-scheduler.md) ("v2").
+إنه حاليًا في المرحلة التجريبية.
 
-## Compatibility
+## التوافق
 
-The v2 and v3 schedulers are compatible. You can switch between them without
-a full sync, and it will not cause scheduling issues if you use v3 on one
-device and sync with another device that is using v2.
+مجدولا v2 وv3 متوافقان. تستطيع التنقل من واحد لآخر بدون مزامنة كاملة، ولن تحصل
+مشاكل مزامنة إذا كنت تستخدم v3 على جهاز وv2 على جهاز آخر.
 
-Client support:
+البرامج التي تدعمه:
 
-- Anki: 2.1.45+
-- AnkiMobile: 2.0.75+
-- AnkiWeb: yes
-- AnkiDroid: not yet
+- أنكي: 2.1.45+
+- أنكي موبيل: 2.0.75+
+- أنكي ويب: نعم
+- أنكيدرويد: ليس بعد
 
-It will likely be some time until AnkiDroid supports the v3 scheduler directly.
-In the mean time, it will continue to show cards using the v2 scheduler,
-regardless of the setting you have chosen.
+قد يستغرق أنكيدرويد وقتًا حتى يدعم مجدول v3 بشكل مباشر. في الوقت الحاضر،
+سيستمر بإظهار البطاقات باستخدام مجدول v2، بغض النظر عن الإعداد الذي اخترته.
 
-Because the v3 scheduler uses a different approach to gathering and sorting
-cards, a v2 and v3 client may show a different number of due cards on a given
-day. While this will not cause scheduling problems, please bear it in mind if
-you're switching back and forth.
+لأن مجدول v3 يستخدم طريقة مختلفة لجمع البطاقات وفرزها، قد تظهر البرامج التي تدعم
+v2 أو v3 عدد بطاقات مستحقة مختلفًا عن بعضها البعض في يوم معين. هذا لن يسبب مشاكل
+في الجدولة، لكن يرجى أخذه بعين الاعتبار إذا كنت تتنقل من مجدول لآخر.
 
-## Changes
+## التغييرات
 
-### Undo
+### الاسترجاع
 
-The v3 scheduler uses Anki's new undo infrastructure - you can answer a card,
-bury a different card, and answer another card, then undo each one in turn if
-you wish. Previous schedulers handled undo separately, so a non-review action
-would clear the review history, and vice versa.
+يستخدم مجدول v3 بنية الاسترجاع الجديدة في أنكي، حيث يمكنك الإجابة عن بطاقة،
+ودفن بطاقة أخرى، والإجابة عن بطاقة أخرى، ثم التراجع عن كل خطوة بدورها.
+المجدولات السابقة عاملت عمليات التراجع بشكل منفصل، حيث تمسح عملية ليست متعلقة بالدراسة سجل تراجعات الدراسة، والعكس صحيح.
 
-### Daily limits
+### الحدود اليومية
 
-The new count is now capped by the review count. If you have limits of 200
-reviews and 20 new cards, and 190 reviews are due, only 10 new cards will be
-introduced.
+حد البطاقات اليومي محدود بحد المراجعة الآن. إذا ضبطت حد المراجعة لـ200 مراجعة
+وحد البطاقات الجديدة لـ20، وهناك 190 مراجعة مستحقة، فستظهر 10 بطاقات جديدة فقط.
 
-In Anki 2.1.50+/AnkiMobile 2.0.84+, each deck's limit affects the number of
-cards that will be drawn from that deck and its subdecks. Limits are applied
-from the deck you select, so if you select a child deck, its parents' limits
-will not apply. For example, with the following limits:
+في أنكي 2.1.50+ وأنكي موبيل 2.0.84+، يؤثر حد كل رزمة بعدد البطاقات التي يتم جلبها من تلك الرزمة ورزمها الفرعية.
+يتم تطبيق الحدود بدءًا من الرزمة التي تحددها، لذلك إذا حددت رزمة فرعية، فلن تنطبق حدود الرزمة الأم عليها. على سبيل المثال، إذا كانت لدينا الحدود التالية:
 
-- Parent: 100
-- Parent::Child: 30
-- Parent::Child::Grandchild1: 50
-- Parent::Child::Grandchild2: 5
-- Parent::Child::Grandchild3: 200
+- أم: 100
+- أم::طفل: 30
+- أم::طفل::حفيد1: 50
+- أم::طفل::حفيد2: 5
+- أم::طفل::حفيد3: 200
 
-Then:
+عندها:
 
-- If you click on Grandchild3, you'll get up to 200 cards.
-- If you click on Grandchild2, you'll get up to 5 cards.
-- If you click on Grandchild1, you'll get up to 50 cards.
-- If you click on Child, you'll get up to 30 cards from the Child deck and its
-  subdecks. No more than 5 cards will be taken from Grandchild2.
-- If you click on Parent, you'll get up to 100 cards, with a maximum of 30
-  coming from Child and its subdecks.
+- إذا ضغطت على **حفيد3**، فستظهر 200 بطاقة كحد أقصى.
+- إذا ضغطت على **حفيد2**، فستظهر 5 بطاقات كحد أقصى.
+- إذا ضغطت على **حفيد1**، فستظهر 50 بطاقة كحد أقصى.
+- إذا ضغطت على **طفل**، فستظهر 30 بطاقة كحد أقصى من رزمة **طفل** ورزمها الفرعية.
+  ولن يظهر أكثر من 5 بطاقات من **حفيد2**.
+- إذا ضغطت على **أم**، فستظهر 100 بطاقة كحد أقصى، مع 30 بطاقة كحد أقصى من رزمة **طفل** ورزمها الفرعية.
 
-In the v3 scheduler in earlier Anki releases, intermediate limits were not
-respected, so when clicking on Parent, the limits of Child did not influence how
-many cards were taken from the grandchildren.
+في مجدول v3 في الإصدارات السابقة، لم تكن الحدود الأقرب لكل رزمة تؤخذ بعين الاعتبار،
+بمعنى أنك إذا ضغطت على **أم**، لم تكن حدود **طفل** تؤثر على عدد البطاقات المأخوذة من الأحفاد.
 
-### Sorting
+### الفرز
 
-Additional deck options have been added to control the order new cards and
-reviews are presented in. New cards can be mixed from multiple decks, and
-reviews can optionally be ordered by interval or subdeck.
+أضيفت خيارات رزمة إضافية للتحكم بترتيب البطاقات الجديدة والمراجعات. يمكن خلط البطاقات الجديدة وجلبها من رزم مختلفة، ويمكن ترتيب المراجعات حسب الفاصل الزمني أو الرزم الفرعية.
 
-When burying is disabled, it is now possible to control whether siblings are
-shown together or not, by adjusting the display order.
+عندما يكون الدفن غير مفعل، أصبح الآن من الممكن التحكم بما إذا كان يجب إظهار البطاقات
+الشقيقة معًا أم لا عن طريق ضبط ترتيب الظهور.
 
-The options controlling the mixing of new cards and interday learning cards have
-been moved from the Preferences screen into the deck options. The options will
-be used from the deck you select to study.
+تم نقل الخيارات التي تتحكم بخلط البطاقات الجديدة وبطاقات التعلم ذات الخطوات التي لا تتخطى اليوم الواحد من شاشة التفضيلات إلى خيارات الرزمة. تنطبق إعدادات الرزمة التي تختارها.
 
-### Burying
+### الدفن
 
-When burying is enabled, cards are now excluded from the queues at the start of
-a study session. Previously if you had 10 forward and 10 reverse cards, the
-counts would start at 20 and jump down as you review, but now they'll start directly
-at 10. The actual burying still happens as you review cards.
+عندما يكون الدفن مفعلًا، يتم إقصاء البطاقات من صفوف الدراسة في بداية جلسة الدراسة.
+سابقًا إذا كان لديك 10 بطاقات أمام-خلف و10 بطاقات خلف-أمام، كانت تبدأ العدادات من 20 وتتناقص أثناء المراجعة، لكن الآن ستبدأ من العدد 10.
+ما زال يحدث الدفن الفعلي أثناء مراجعتك للبطاقات.
 
-Because exclusion is done when you click on a deck, the counts you see on the deck
-list will differ from the ones you see when you click on a deck. The overview screen
-will point out the number of cards that will be buried.
+لأن الإقصاء يحدث عندما تضغط على رزمة، فقد تختلف الأعداد التي تراها في شاشة الرزم
+عن الأعداد التي تراها عندما تضغط على رزمة. تظهر شاشة موجز الرزمة عدد البطاقات التي سيتم دفنها.
 
-Learning cards that cross a day boundary can now be buried like reviews and new
-cards, and there is a new option available that controls whether they should be buried
-or not.
+يمكن الآن دفن بطاقات التعلم التي تتخطى خطواتها اليوم الواحد مثل المراجعات والبطاقات الجديدة، وأصبح هناك خيار جديد للتحكم بما إذا كان يجب دفنها أم لا.
 
-### Fuzz
+### العامل العشوائي
 
-The small random delay added to reviews is now reflected on the answer buttons,
-instead of only being applied when answering.
+يؤثر الآن العامل العشوائي المضاف إلى المراجعات بالفواصل الظاهرة على أزرار الإجابة،
+بدلًا من السلوك القديم الذي كان يطبق العامل فقط عندما تجيب عن البطاقة.
 
-The way the delay is calculated has also been improved - cards with intervals under
-a week now receive a more equally-weighted delay, and the delay amount increases more
-smoothly as intervals increase.
+كما تم تحسين طريقة حساب الفاصل: البطاقات ذات الفواصل الأقصر من أسبوع تأخذ
+فواصل متوازنة أكثر، وطول الفاصل يزداد بانتظام أكثر كلما طالت الفواصل.
 
-### Interday learning
+### بطاقات التعلم ذات الخطوات التي تتخطى اليوم الواحد
 
-Interday (1+ day) learning cards are now subject to the review limit. When
-determining what fits within the limit, Anki fetches interday learning cards
-first, then reviews, and finally new cards.
+بطاقات التعلم ذات الخطوات التي تتخطى اليوم الواحد تخضع لحد المراجعة الآن.
+عند تحديد البطاقات التي تتسع في الحد المضبوط، أنكي يجلب هذا النوع من البطاقات أولًا، ثم
+المراجعات، وأخيرًا البطاقات الجديدة.
 
-### Filtered decks
+### الرزم المفلترة
 
-Filtered decks with rescheduling disabled now show 4 buttons - the provided
-delay applies to the Again button, and Hard/Good will use 1.5x and 2x the
-provided delay. Easy will remove the card.
+تظهر الآن الرزم المفلترة حينما يكون خيار إعادة الجدولة غير مفعل 4 أزرار:
+الفاصل المعطى ينطبق على زر مجددًا، بينما تطبق أزرار صعب/جيد 1.5 و2 أضعاف ذاك الفاصل.
+بينما زر سهل يزيل البطاقة من الرزمة المفلترة.
 
-## Add-ons and custom scheduling
+## الإضافات والجدولة المخصصة
 
-The new scheduler is a ground-up rewrite, so add-ons that modified the old
-scheduler's card gathering or answering routines will no longer work. It is no
-longer possible to selectively replace parts of the scheduler's code ("monkey
-patching"), so some add-ons may not be practical to port without significant
-effort.
+تمت كتابة المجدول الجديد من الصفر، لذلك لن تعمل أي إضافات تعدل جلب البطاقات
+ودوال الإجابة في المجدول القديم. لم يعد ممكنًا أيضا استبدال أجزاء من كود المجدول
+("monkey
+patching")، لذلك ليس عمليًا إعادة كتابة بعض الإضافات لتعمل مع المجدول الجديد بدون جهد كبير.
 
-The new scheduler does provide some control over the scheduling however. As each
-card is presented, the times and states associated with each answer button are
-calculated in advance, and it is possible to modify the calculated scheduling
-with some JavaScript code entered into the bottom of the deck options screen.
+لكن المجدول الجديد يوفر بعض التحكم بالجدولة على كل حال. كلما يتم عرض بطاقة،
+تكون الفواصل والحالات المرتبطة بكل زر إجابة محسوبة مسبقًا، ومن الممكن تغيير
+الجدولة المحسوبة باستخدام كود جافاسكربت يتم إدخاله أسفل شاشة خيارات الرزمة.
 
-For example:
+مثلًا:
 
 ```javascript
-// print the existing states
+// اطبع الحالات الموجودة
 console.log(JSON.stringify(states, null, 4));
 
-// load the debugger if the web inspector is open
+// افتح متتبع الأخطاء إذا كان فاحص الويب مفتوحًا
 debugger;
 
-// if the hard button is a learning step, make it
-// a 123 minute delay
+// إذا كان زر صعب في خطوة تعلم، اجعل فاصله
+// 123 دقيقة
 if (states.hard.normal?.learning) {
   states.hard.normal.learning.scheduledSecs = 123 * 60;
 }
 
-// apply the same change in a rescheduling filtered deck
+// طبق التغيير نفسه في زرمة مفلترة فيها خيار إعادة الجدولة مفعل
 if (states.hard.filtered?.rescheduling?.originalState?.learning) {
   states.hard.filtered.rescheduling.originalState.learning.scheduledSecs =
     123 * 60;
 }
 
-// increase ease factor by 0.2 when Easy used on a review
+// ارفع عامل السهولة بقيمة 0.2 عندما يتم ضغط زر سهل في بطاقة مراجعة
 if (states.good.normal?.review) {
   states.easy.normal.review.easeFactor =
     states.good.normal.review.easeFactor + 0.2;
 }
 ```
 
-Because this is implemented in JavaScript, it is not limited to the computer
-version. AnkiMobile supports it as well, and AnkiWeb and AnkiDroid may support
-it in the future too. This will allow advanced users to make adjustments to the
-standard scheduling behaviour, that apply on all platforms.
+لأن هذا مكتوب بلغة جافاسكربت، فإنه ليس محدودًا على نسخة الكمبيوتر فقط:
+أنكي موبيل يدعمه أيضا، وقد يدعمه أنكي ويب وأنكيدرويد في المستقبل أيضًا.
+سيسمح هذا للمستخدمين المتقدمين بإجراء تغييرات على سلوك الجدولة العادي بطريقة
+تعمل على كل المنصات.
 
-The various scheduling states are described [here](https://github.com/ankitects/anki/blob/9edac805adfe285cc92ed04dfeeffc1d1813c4d0/rslib/backend.proto#L1454).
+حالات الجدولة المختلفة مشروحة [هنا](https://github.com/ankitects/anki/blob/9edac805adfe285cc92ed04dfeeffc1d1813c4d0/rslib/backend.proto#L1454).
 
-## Stability
+## الاستقرارية
 
-The new scheduler passes most of the tests used to test the previous schedulers
-(the ones where behaviour is the same), and appears to have been well received
-so far, but it's possible there are corner-cases that have not been discovered
-yet. If you notice anything unexpected, please let us know.
+نجح المجدول الجديد بتخطي معظم الاختبارات المستخدمة لاختبار المجدولات القديمة
+(في الحالات التي يكون فيها سلوك المجدولات متطابقًا)، وقد تلقى انطباعات جيدة حتى الآن،
+لكن من الممكن وجود سلوكات غير اعتيادية لم يتم الكشف عنها بعد.
+يرجى إعلامنا إذا لاحظت أي شيء غير عادي.
 
-## Trying it out
+## تجربة المجدول
 
-As of Anki 2.1.45 and AnkiMobile 2.0.75, the scheduler can be enabled and
-disabled in the Preferences screen.
+بدءًا من أنكي 2.1.45 وأنكي موبيل 2.0.75، يمكن تفعيل المجدول وتعطيله من شاشة التفضيلات.
