@@ -1,73 +1,79 @@
-# Card template has a problem
+# هناك مشكلة في قالب البطاقات
 
-Anki has recently become stricter about reporting mistakes in card templates. In the past, it would silently ignore some problems, but display templates in unexpected ways. This change has been made to make mistakes easier to notice.
+أصبح أنكي مؤخرا أكثر صرامة بخصوص الإبلاغ عن الأخطاء في قوالب البطاقات. في الماضي كان فقط
+يتجاهل بعض المشاكل بصمت، ويعرض القوالب بطرق غير متوقعة. تم تغيير هذا لجعل كشف الأخطاء أسهل.
 
-If you have not edited your card templates yourself, it is likely you have downloaded a shared deck, where the original deck author made a mistake when creating the template.
+إذا لم تعدل قوالب بطاقاتك بنفسك، فمن المرجح أنك نزلت رزمة مشاركة، حيث ارتكب مؤلف الرزمة الأصلي خطأ عند إنشاء الرزمة.
 
-You can correct mistakes on the template by opening the card templates screen:
+تستطيع إصلاح الأخطاء في القالب بفتح شاشة قوالب البطاقات:
 
-- On the computer version, edit a problem card, and then click on the Cards... button
-- On AnkiMobile, while viewing a problem card in the review screen, tap the cog/gear, then Card Template.
+- في نسخة الكمبيوتر، عدل البطاقة التي فيها مشكلة، ثم اضغط على زر "بطاقات...".
+- في أنكي موبيل، عند رؤية بطاقة فيها المشكلة في شاشة المراجعة، انقر على زر الأتراس المسننة، ثم قالب البطاقة.
 
-When you correct a mistake, it will update all cards of that type - you do not need to make the same change for every card that uses the template.
+عندما تصحح خطأ، سيتم تحديث كل البطاقات التي تستخدم القالب ذاك. لذلك لا تحتاج
+لأن تجري التعديل على كل بطاقة تستخدم القالب.
 
-What needs changing will depend on the message you are getting.
+يعتمد ما عليك تغييره على رسالة الخطأ التي تظهر لك.
 
-**Found '{{Field}}', but there is no field called 'Field'**
+**وُجد '{{حقل}}'، لكن ليس هناك حقل يسمى 'حقل'**
 
-This indicates your template includes the name of a field that doesn't exist. To fix the problem, locate the
-{{Field}} inside the card template, and remove it.
+يدل هذا على أن القالب يحتوي على اسم حقل غير موجود. لإصلاح المشكلة، ابحث عن {{حقل}}
+في القالب وامسحه.
 
-**Missing }} in {{Field**
+**ينقص <span dir=ltr>}}</span> في <span dir=ltr>{{حقل</span>**
 
-This message is shown when {{ is found in the template without a matching }}. For example, if you have
-
-```
-{{Field
-```
-
-then this needs to be changed to
+يظهر هذا الخطأ عندما يوجد <span dir=ltr>{{</span> في القالب بدون <span dir=ltr>}}</span> مرافقة. مثلا، إذا كان لديك
 
 ```
-{{Field}}
+{{حقل
 ```
 
-**Missing {{/Field}}**
-
-This means Anki found `{{#Field}}` or `{{^Field}}` in your card template, without a matching `{{/Field}}`. Removing  `{{#Field}}` or `{{^Field}}` from the template will fix the error.
-
-**Found {{/One}}, but expected {{/Two}}**
-
-Conditional replacements need to be closed in the same order they are opened. For example, the following template is incorrect:
+فيجب تغييره لـ
 
 ```
-{{#One}}
-  {{#Two}}
-    {{Three}}
-  {{/One}}
-{{/Two}}
+{{حقل}}
 ```
 
-To fix the problem, the template should be changed like so:
+**ينقص <span dir=ltr>{{/حقل}}</span>**
+
+يعني هذا أن أنكي وجد <span dir=ltr>`{{#حقل}}`</span> أو <span dir=ltr>`{{^حقل}}`</span> في القالب،
+بدون <span dir=ltr>`{{/حقل}}`</span> مرافقة.
+حذف <span dir=ltr>`{{#حقل}}`</span> أو <span dir=ltr>`{{^حقل}}`</span> من القالب سيصلح المشكلة.
+
+**وجد <span dir=ltr>{{/واحد}}</span>, لكن توقع <span dir=ltr>{{/اثنان}}</span>**
+
+استبدالات الحقول الشرطية يجب أن تغلق بالترتيب نفسه التي فتحت به. مثلا، القالب التالي خاطئ:
 
 ```
-{{#One}}
-  {{#Two}}
-    {{Three}}
-  {{/Two}}
-{{/One}}
-```
-**Found {{/Field}}, but missing '{{#Field}}' or '{{^Field}}'**
-
-Closing tags must be matched by opening tags. For example, the following is invalid, because there is no `{{#Two}}` or `{{^Two}}` at the start:
-
-```
-  {{Field}}
-{{/Two}}
+{{#واحد}}
+  {{#اثنان}}
+    {{ثلاثة}}
+  {{/واحد}}
+{{/اثنان}}
 ```
 
-It can be fixed by removing the closing tag:
+لإصلاح المشكلة، يجب تعديل القالب كالتالي:
 
 ```
-{{Field}}
+{{#واحد}}
+  {{#اثنان}}
+    {{ثلاثة}}
+  {{/اثنان}}
+{{/واحد}}
+```
+
+**وجد <span dir=ltr>{{/حقل}}</span>, لكن ينقص '<span dir=ltr>{{#حقل}}</span>' أو '<span dir=ltr>{{^حقل}}</span>'**
+
+يجب أن تسبق الوسوم المغلقة بوسوم مفتوحة. مثلا، التعبير التالي غير صالح،
+لأنه ليس هناك <span dir=ltr>`{{#اثنان}}`</span> or <span dir=ltr>`{{^اثنان}}`</span> في البداية:
+
+```
+  {{حقل}}
+{{/اثنان}}
+```
+
+يمكن إصلاح المشكلة بحذف الوسم المغلق:
+
+```
+{{حقل}}
 ```
