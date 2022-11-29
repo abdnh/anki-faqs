@@ -1,11 +1,14 @@
-# Cards are reversed / appearing twice
+# البطاقات معكوسة / تظهر مرتين
 
-Anki can be configured to show cards in both a forward and reverse direction. If you want cards to only show from front->back, you can delete the reverse card.
+يمكن ضبط أنكي لكي يظهر البطاقات باتجاه أمامي وخلفي. إذا أردت فقط اتجاه أمام->خلف،
+يمكنك حذف البطاقة المعكوسة.
 
-If you have added cards to the `Basic (and reversed)` or `Basic (optional reversed)` notetypes, you can change the cards to the "Basic" card type by selecting them in the Browse screen, then using the Change Note Type menu item. Select your Basic note type, choosing to keep Card 1, and discard Card 2.
+إذا أضفت بطاقات إلى أنواع الملحوظات `أساسي (وبطاقة معكوسة)` و `أساسي (وبطاقة معكوسة اختيارية)`،
+تستطيع تغيير البطاقات لنوع "أساسي" عن طريق تحديدها في شاشة المتصفح، ثم استخدام
+عنصر القائمة تغيير نوع الملحوظة. حدد النوع الأساسي واختر إبقاء البطاقة 1 وحذف البطاقة 2.
 
-If you have modified the Basic card template to add an unwanted reverse direction, you can modify it back instead:
+إذا عدلت القالب الأساسي وأضفت بطاقة معكوسة لا تريدها، تستطيع إلغاء التعديل بفعل التالي:
 
-- Edit a card
-- Click the 'Cards' button
-- You will see one or more tabs at the top representing each card type that will be created. Locate the card type you don't want, click the Options button, and remove the unwanted card template.
+- عدل البطاقة
+- اضغط على زر "بطاقات"
+- سترى تبويبة أو أكثر في الأعلى تمثل كل نوع بطاقة سيتم إنشاؤه. جد النوع الذي لا تريده، ثم اضغط زر خيارات، ثم احذف النوع.
