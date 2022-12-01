@@ -1,12 +1,14 @@
-# Characters are cut off
+# الحروف مقصوصة
 
-If you find that parts of your characters are missing, the font you're using is probably not appropriate for the language you're studying. To fix this:
+إذا لاحظت أن أجزاء من الحروف مقصوصة، فيحتمل أن الخط الذي تستخدمه ليس مناسبا للغة التي تستخدمها.
+لإصلاح هذا:
 
-* While an affected card is shown, click Edit, then Cards. 
-* Click the Add Field button.
-* Select Front or Back, depending on which side you want the field to be shown on.
-* Choose a font that is intended for the language you're studying.
-* After clicking OK, you should see the field appear a second time on your card, and this time it should appear correctly. If it doesn't, add the field again and try a different font.
-* Remove any other {{field}} references on the left side, so that the field only appears once on your card.
+* عندما تكون البطاقة المتؤثرة معروضة، اضغط على تحرير ثم بطاقات.
+* اضغط على زر إضافة حقل.
+* اختر أمام أو خلف، اعتمادا على الجانب الذي تريد ظهور الحقل فيه.
+* اختر خطا مناسبا للغة التي تدرسها.
+* بعد الضغط على موافق، يجب أن ترى أن الحقل ظهر مرة أخرى في البطاقة، لكن هذه المرة بشكل صحيح. إذا لم يحصل هذا، جرب إضافة الحقل مرة أخرى مع خط مختلف.
+* احذف أي وسوم {{حقل}} موجودة في الجانب الأيسر لكي يظهر الحقل مرة واحدة فقط في البطاقة.
 
-If you're using Windows, you may need to install language support for the language you want to use in Windows first. After rebooting, any newly added fonts should become available to Anki.
+إذا كنت تستخدم ويندوز، قد تحتاج لأن تنصب دعم للغة التي تريد استخدامها في ويندوز أولا.
+بعد إعادة التشغيل، يجب أن تصبح الخطوط المضافة حديثا متوفرة في أنكي.

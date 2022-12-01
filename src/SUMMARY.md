@@ -12,7 +12,7 @@
 - [هل أستطيع كشف أجزاء من بطاقة بأوقات مختلفة؟](./can-i-reveal-parts-of-a-card-one-at-a-time.md)
 - [هناك مشكلة في قالب البطاقات](./card-template-has-a-problem.md)
 - [البطاقات معكوسة / تظهر مرتين](./cards-are-reversed-appearing-twice.md)
-- [Characters are cut off](./characters-are-cut-off.md)
+- [الحروف مقصوصة](./characters-are-cut-off.md)
 - [Customizing MathJax](./customizing-mathjax.md)
 - [Errors when recording](./errors-when-recording.md)
 - [Extra characters appearing on cards](./extra-characters-appearing-on-cards.md)
