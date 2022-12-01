@@ -1,10 +1,11 @@
-# Customizing MathJax
+# تخصيص MathJax
 
-Anki's bundled MathJax support is loaded before your card content, so if you wish to customize MathJax, you will need to do so in a specific way.
+دعم MathJax المضمن مع أنكي يتم تحميله قبل محتوى البطاقات، لذلك إذا كنت تريد تخصيص MathJax،
+فعليك فعل هذا بطريقة محددة.
 
-For recent Anki versions, please see [this post](https://forums.ankiweb.net/t/configure-mathjax-macros-on-macos/6535/2).
+انظر [هذا المنشور](https://forums.ankiweb.net/t/configure-mathjax-macros-on-macos/6535/2) لنسخ أنكي الأخيرة.
 
-For older Anki versions:
+لنسخ أنكي القديمة:
 
 ```html
 <script>
@@ -15,6 +16,7 @@ For older Anki versions:
 </script>
 ```
 
-Notes:
+ملحوظات:
 
-- Please avoid changing the standard open/close tags (`\(` and `\[`), to something like `$` and `$$`, as Anki has special logic for cloze deletions, which will not work if you change the delimiter.
+- تجنب استخدام وسوم (`\(` و `\[`) الرسمية، واستخدم بديل كـ `$` و `$$`، لأن لأنكي
+  معاملة خاصة لعبارات ملء الفراغات، والتي لن تعمل إذا غيرت الرموز المحدِّدة.
