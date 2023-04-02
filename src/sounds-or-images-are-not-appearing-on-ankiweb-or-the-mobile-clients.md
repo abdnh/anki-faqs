@@ -1,19 +1,18 @@
-# Sounds/images are not appearing on AnkiWeb or the mobile clients
+[الصوتيات أو الصور لا تظهر على AnkiWeb أو التطبيقات المحمولة](#soundsimages-are-not-appearing-on-ankiweb-or-the-mobile-clients)
+====================================================================================================================================
 
-If you created your deck by importing from a text file, or you downloaded a shared deck that was created in that way, it's possible the filenames in Anki do not match the filenames on the computer. Some computers treat "file.jpg", "file.JPG" and "FILE.JPG" all as the same file, but other computers do not. This means that if the deck contains a reference to "dog.jpg" but the file on disk is "dog.JPG", some devices (including AnkiWeb) will not be able to display the image.
+  إذا قمت بإنشاء رزمة البطاقات الخاصة بك عن طريق استيرادها من ملف نصي، أو قمت بتنزيل رزمة بطاقات مشتركة تم إنشاؤها بهذه الطريقة، فمن الممكن أن تختلف أسماء الملفات في Anki عن أسماء الملفات على الكمبيوتر. بعض الكمبيوترات تعامل ملفات "file.jpg" و"file.JPG" و "FILE.JPG" كملف واحد، بينما لا تعامل الكثير من الأجهزة بهذا الشكل. وهذا يعني أنه إذا كان هناك اشارة لـ "dog.jpg" في الرزمة وكان اسم الملف على القرص الصلب هو "dog.JPG"، فقد لا تتمكن بعض الأجهزة (بما في ذلك AnkiWeb) من عرض الصورة.
 
-You can confirm this is a problem by editing a card that's not showing up correctly using the computer version. If audio isn't working, you'll see a link like `[sound:hello.mp3]`. If you see a broken image link, click on that field, then press the down arrow on the top right, choose "Edit HTML", and locate text that looks like:
+يمكنك التأكد من هذه المشكلة من خلال تحرير بطاقة لا تظهر بشكل صحيح باستخدام إصدار الكمبيوتر. إذا لم يعمل الصوت، سترى رابطًا مثل [sound:hello.mp3]. إذا رأيت رابطًا مكسورًا للصورة، فانقر فوق هذا الحقل، ثم اضغط على السهم الأسفل على اليمين، واختر "تحرير HTML"، ثم ابحث عن النص الذي يشبه:
 
-```html
-<img src="cat.jpg" />
-```
+    <img src="cat.jpg" />
 
-Note down the name of the file.
+سجل اسم الملف.
 
-Then open your collection's media folder (<https://docs.ankiweb.net/files.html#file-locations>) and locate the file that is referenced. If the file does not use exactly the same combination of lowercase or uppercase letters, you've found the problem.
+ثم افتح مجلد الوسائط في مجموعة Anki الخاصة بك ([https://docs.ankiweb.net/files.html#file-locations](https://docs.ankiweb.net/files.html#file-locations)) وابحث عن الملف المشار إليه. إذا لم يكن الاسم يستخدم نفس التركيب الدقيق من الأحرف الصغيرة والكبيرة، فهذا هو المشكلة.
 
-Please also make sure you [ran a media check](https://docs.ankiweb.net/media.html#manually-adding-media).
+يرجى التأكد أيضًا من تشغيل فحص الوسائط. [أجريت فحصا للوسيط](https://docs.ankiweb.net/media.html#manually-adding-media).
 
-If it was a shared deck, please report the issue to the shared deck author. If the differences in case are regular, you can try fix the problem using Anki's find&replace feature in the browser. For example, if the link is for "dog.JPG" but the file on disk is "dog.jpg", you can click browse, select all cards, and use find&replace to replace JPG with jpg.
+إذا كانت الرزمة مشتركة، فيرجى الإبلاغ عن المشكلة لمؤلف الرزمة المشتركة. إذا كانت الاختلافات في الحالات النمطية، فيمكنك محاولة حل المشكلة باستخدام ميزة البحث والاستبدال في المتصفح Anki. على سبيل المثال، إذا كان الرابط يحتوي على "dog.JPG" ولكن الملف على القرص هو "dog.jpg"، فيمكنك النقر على "تصفح" وتحديد كافة البطاقات، واستخدام ميزة البحث والاستبدال لاستبدال JPG بـ jpg.
 
-If that doesn't explain your issue, please check that the computer you're on is not using a vfat/fat32 file system. Anki currently is unable to detect changes to the media folder when it's on such a filesystem, so media syncing will not work in this case. A workaround is planned for a future release.
+إذا لم يفسر هذا مشكلتك، فيرجى التحقق من عدم استخدام الحاسوب الخاص بك نظام ملفات vfat/fat32. حاليًا، لا يمكن لـ Anki اكتشاف التغييرات في مجلد الوسائط عندما يكون على مثل هذا النظام، لذا لن يعمل مزامنة الوسائط في هذه الحالة. هناك حل بديل يخطط له في إصدار مستقبلي
