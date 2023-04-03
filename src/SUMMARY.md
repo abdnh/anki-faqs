@@ -69,7 +69,7 @@
 - [Outlook.com silently discards email](./outlook-silently-discards-email.md)
 - [Synchronizing multiple profiles](./synchronizing-multiple-profiles.md)
 - [Syncing failed: Connection timed out errors when syncing](./syncing-failed-connection-timed-out-errors-when-syncing.md)
-- [Sounds/images are not appearing on AnkiWeb or the mobile clients](./sounds-or-images-are-not-appearing-on-ankiweb-or-the-mobile-clients.md)
+- [الصوتيات أو الصور لا تظهر على AnkiWeb أو التطبيقات المحمولة](./sounds-or-images-are-not-appearing-on-ankiweb-or-the-mobile-clients.md)
 
 ---
 
