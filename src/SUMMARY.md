@@ -65,7 +65,7 @@
 - [Email verification](./email-verification.md)
 - [Emails not being received](./emails-not-being-received.md)
 - [Error establishing a secure connection when syncing](./error-establishing-a-secure-connection-when-syncing.md)
-- [Media files may take time to sync](./media-files-may-take-time-to-sync.md)
+- [قد تستغرق مزامنة ملفات الوسائط بعض الوقت](./media-files-may-take-time-to-sync.md)
 - [Outlook.com silently discards email](./outlook-silently-discards-email.md)
 - [Synchronizing multiple profiles](./synchronizing-multiple-profiles.md)
 - [Syncing failed: Connection timed out errors when syncing](./syncing-failed-connection-timed-out-errors-when-syncing.md)

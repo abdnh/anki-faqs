@@ -1,24 +1,29 @@
-# Media files may take time to sync
+# قد تستغرق مزامنة ملفات الوسائط بعض الوقت
 
-Please take a look at the [media syncing intro video](https://www.youtube.com/watch?v=phP9GGG-PxY&yt:cc=on). If you prefer not to watch a video, please read on.
+يرجى إلقاء نظرة على [الفيديو التمهيدي لمزامنة الوسائط](https://www.youtube.com/watch?v=phP9GGG-PxY&yt:cc=on).
+إذا كنت تفضل عدم مشاهدة مقطع فيديو، فيرجى القراءة.
 
-Recent Anki and AnkiMobile versions synchronize sounds and images in the background, allowing you to continue using the app while they are transferred. Until the media files have been transferred, audio may fail to play, and images may fail to appear if those files are not available yet.
+تعمل إصدارات أنكي وأنكي موبايل الحديثة على مزامنة الأصوات والصور في الخلفية، مما يسمح لك بمواصلة استخدام التطبيق أثناء نقلها.
+حتى يتم نقل ملفات الوسائط، قد يفشل تشغيل الصوت، وقد تفشل الصور في الظهور إذا لم تكن هذه الملفات متوفرة بعد.
 
-If you tap/click on the sync button when a spinner is shown next to it, it will reveal more details about the syncing progress. If you are waiting for sounds/images to start working, please wait for that window to show "media sync complete". Once that message has been displayed, it indicates all media files have been transferred to or from your device, and the media should then work during study.
+إذا نقرت على زر المزامنة عند ظهور المؤشر بجانبه، فسيكشف عن مزيد من التفاصيل حول تقدم المزامنة.
+إذا كنت تنتظر بدء مزامنة الأصوات / الصور، فيرجى الانتظار حتى تظهر نافذة "اكتملت مزامنة الوسائط".
+بمجرد عرض هذه الرسالة، فإنها تشير إلى أن جميع ملفات الوسائط قد تم نقلها من أو إلى جهازك، ويجب أن تعمل الوسائط بعد ذلك أثناء الدراسة.
 
-## AnkiMobile
+## أنكي موبايل
 
-If you turn your device's screen off, or you switch to a different app, it will interrupt the sync. When you sync again, the download will resume where it stopped.
+إذا أوقفت تشغيل شاشة جهازك، أو انتقلت إلى تطبيق مختلف، فسيؤدي ذلك إلى مقاطعة المزامنة. عند المزامنة مرة أخرى، سيتم استئناف التنزيل من حيث توقف.
 
-If you have a lot of media, the initial sync may take quite a while. AnkiMobile 2.0.64+ will keep the screen turned on while the media syncing screen is shown. Older AnkiMobile versions did not do this, so if you are on an older version and you leave your device unattented, the screen may turn off, interrupting the sync. You can check
-the version you're running in the Preferences>About screen. If you are on an older version, you can download the free update by searching for AnkiMobile in the app store.
+إذا كان لديك الكثير من الوسائط، فقد تستغرق المزامنة الأولية بعض الوقت. 
+أنكي موبايل 2.0.64+ سيبقي الشاشة قيد التشغيل أثناء عرض شاشة مزامنة الوسائط. الإصدارات الأقدم لا تقدم هذا.
+لذلك إذا كنت تستخدم إصدارًا أقدم وتركت جهازك دون اهتمام، فقد يتم إيقاف تشغيل الشاشة، مما يؤدي إلى مقاطعة المزامنة.
+يمكنك التحقق من الإصدار الذي تقوم بتشغيله في شاشة التفضيلات > حول. إذا كنت تستخدم إصدارًا أقدم، فيمكنك تنزيل التحديث المجاني من خلال البحث عن AnkiMobile في متجر التطبيقات.
 
-## Monitoring progress
+## رصد التقدم المحرز
 
-The media sync screen will show increasing counts as progress is made. If you find the added/removed count
-does not change for an extended period, you can use the Abort button to interrupt the sync, then sync
-again to pick up where you left off.
+ستعرض شاشة مزامنة الوسائط أعدادًا متزايدة مع إحراز تقدم. إذا وجدت أن العدد المضاف/المحذوف لا يتغير لفترة ممتدة،
+يمكنك استخدام الزر إيقاف لمقاطعة المزامنة، ثم المزامنة مرة أخرى للمتابعة من حيث توقفت.
 
-## If problems persist
+## إذا استمرت المشاكل
 
-If sounds or images fail to appear after "media sync complete" is shown, please check that you have syncing of sounds and images enabled in the preferences screen of each Anki version you use, and please use the "Check Media" function in the preferences screen or tools menu to check if you are missing files.
+إذا فشلت الأصوات أو الصور في الظهور بعد عرض "اكتمال مزامنة الوسائط"، فيرجى التحقق من تمكين مزامنة الأصوات والصور في شاشة التفضيلات لكل إصدار أنكي تستخدمه ، ويرجى استخدام خاصية "فحص الوسائط" في قائمة التفضيلات أو قائمة الأدوات للتحقق من الملفات المفقودة.
