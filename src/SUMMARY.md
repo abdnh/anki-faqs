@@ -47,7 +47,7 @@
 - [Due times after a break](./due-times-after-a-break.md)
 - [Extra copies of a card are coming up](./extra-copies-of-a-card-are-coming-up.md)
 - [Hard/good interval is longer than good/easy](./hard-good-interval-longer-than-good-easy.md)
-- [I'm going on vacation. Can I pause the scheduler?](./i-am-going-on-vacation-can-i-pause-the-scheduler.md)
+- [أنا ذاهب في عطلة. هل يمكنني إيقاف جدولة البطاقات؟](./i-am-going-on-vacation-can-i-pause-the-scheduler.md)
 - [Resetting progress in a deck](./resetting-progress-in-a-deck.md)
 - [Settings for using Anki to prepare for a large exam](./settings-for-using-anki-to-prepare-for-a-large-exam.md)
 - [The Anki 2.1 scheduler](./the-anki-2.1-scheduler.md)

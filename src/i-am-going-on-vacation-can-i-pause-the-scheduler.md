@@ -1,5 +1,7 @@
-# I'm going on vacation. Can I pause the scheduler?
+# أنا ذاهب في عطلة. هل يمكنني إيقاف جدولة البطاقات؟
 
-Being able to come back from a break to find Anki in exactly the same state you left it in may sound attractive, but unfortunately while it's easy to tell the computer to suspend its estimates of how quickly you are forgetting, it's not possible to suspend your memory, so memories will continue to decay if you don't review. If you paused the scheduler, you would be delaying the review of every card in your deck, increasing your chance of forgetting every one of them, even those that would normally have appeared after you returned from your break.
+قد تبدو القدرة على العودة من الإجازة وبدأ أنكي في نفس الحالة التي تركتها فيه شيئًا رائعًا ولكن للأسف، بينما من السهل تعليق جدولة التطبيق، فإنه من الصعب منع ذاكرتك من النسيان، لذلك ستستمر المعلومات في التلاشي شيئاً فشيئاً إذا لم تراجعها.
+إذا أوقفت الجدولة فستؤخر استعراض كل البطاقات في مجموعتك مما يزيد من فرصة نسيانها كلها في المستقبل، حتى تلك التي ستظهر في العادة بعد عودتك من عطلتك.
 
-Anki does have a "Set Due Date" feature in the Browse screen that can change the due date of cards. You can use this to either to move cards to an earlier due date (allowing you to study more before you take a break), or to push cards back to a later date. Conservative changes are recommended - if you alter the due date of cards by too much, there is a good chance you will forget them and need to relearn them again.
+يوفر أنكي ميزة "ضبط تاريخ الاستحقاق" في متصفح البطاقات يمكنك استخدامها لتغيير تاريخ استحقاق البطاقات.
+يمكنك استخدامها إما لتحريك البطاقات إلى موعد يسبق الموعد الخاص بها مما يساعدك على دراسة المزيد قبل موعد عطلتك، أو تأخير البطاقات إلى موعد لاحق. لكن يجب الحذر من استخدام هذه الخاصيّة حيث إن الإفراط في استخدامها قد يزيد من فرصة نسيان البطاقات وقد يحتم عليك تعلمها مجددًا.
