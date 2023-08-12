@@ -128,8 +128,7 @@ fit for you.
 
 ## What about SM-5?
 
-Anki’s scheduler was originally based on
-[SM-5](https://www.supermemo.com/english/ol/sm5.htm). Anki’s default of
+Anki’s scheduler was originally based on SM-5. Anki’s default of
 showing the next interval above each ease button revealed problems with
 the implementation - harder cards could end up with greater interval
 increases than easy ones, and the ease factors sometimes grew to the

@@ -140,7 +140,7 @@ if (states.good.normal?.review) {
 سيسمح هذا للمستخدمين المتقدمين بإجراء تغييرات على سلوك الجدولة العادي بطريقة
 تعمل على كل المنصات.
 
-حالات الجدولة المختلفة مشروحة [هنا](https://github.com/ankitects/anki/blob/9edac805adfe285cc92ed04dfeeffc1d1813c4d0/rslib/backend.proto#L1454).
+حالات الجدولة المختلفة مشروحة [هنا](https://github.com/ankitects/anki/blob/main/proto/anki/scheduler.proto).
 
 ## الاستقرارية
 
