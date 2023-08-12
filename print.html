@@ -314,9 +314,9 @@
 <pre><code>{{حقل}}
 </code></pre>
 <p><strong>ينقص <span dir=ltr>{{/حقل}}</span></strong></p>
-<p>يعني هذا أن أنكي وجد <span dir=ltr><code>{{#حقل}}</code></span> أو <span dir=ltr><code>{{^حقل}}</code></span> في القالب،
-بدون <span dir=ltr><code>{{/حقل}}</code></span> مرافقة.
-حذف <span dir=ltr><code>{{#حقل}}</code></span> أو <span dir=ltr><code>{{^حقل}}</code></span> من القالب سيصلح المشكلة.</p>
+<p>يعني هذا أن أنكي وجد <span dir=ltr> <code>{{#حقل}}</code></span> أو <span dir=ltr> <code>{{^حقل}}</code></span> في القالب،
+بدون <span dir=ltr> <code>{{/حقل}}</code></span> مرافقة.
+حذف <span dir=ltr> <code>{{#حقل}}</code></span> أو <span dir=ltr> <code>{{^حقل}}</code></span> من القالب سيصلح المشكلة.</p>
 <p><strong>وجد <span dir=ltr>{{/واحد}}</span>, لكن توقع <span dir=ltr>{{/اثنان}}</span></strong></p>
 <p>استبدالات الحقول الشرطية يجب أن تغلق بالترتيب نفسه التي فتحت به. مثلا، القالب التالي خاطئ:</p>
 <pre><code>{{#واحد}}
@@ -334,7 +334,7 @@
 </code></pre>
 <p><strong>وجد <span dir=ltr>{{/حقل}}</span>, لكن ينقص '<span dir=ltr>{{#حقل}}</span>' أو '<span dir=ltr>{{^حقل}}</span>'</strong></p>
 <p>يجب أن تسبق الوسوم المغلقة بوسوم مفتوحة. مثلا، التعبير التالي غير صالح،
-لأنه ليس هناك <span dir=ltr><code>{{#اثنان}}</code></span> or <span dir=ltr><code>{{^اثنان}}</code></span> في البداية:</p>
+لأنه ليس هناك <span dir=ltr> <code>{{#اثنان}}</code></span> or <span dir=ltr> <code>{{^اثنان}}</code></span> في البداية:</p>
 <pre><code>  {{حقل}}
 {{/اثنان}}
 </code></pre>
@@ -386,7 +386,7 @@
 <div style="break-before: page; page-break-before: always;"></div><h1 id="errors-when-recording"><a class="header" href="#errors-when-recording">Errors when recording</a></h1>
 <p>If you have problems recording audio in Anki, please make sure:</p>
 <ul>
-<li>a microphone is connected to the computer </li>
+<li>a microphone is connected to the computer</li>
 <li>the microphone is set as the default recording device in your system's sound settings</li>
 <li>another program like Skype is not using the microphone - you may need to close the other microphone-using program. If that does not help, please try restarting your computer.</li>
 </ul>
@@ -497,7 +497,7 @@ A: A giraffe.
 <p>If you've lost your sound and images, but had obtained them from a shared deck, if the shared deck is still available you can import it into a new profile, and then copy the sounds and images from it into your original collection to restore the data.</p>
 <p>When editing fields, Anki shows the names of sound files. To see the names of image files, you can press ctrl+shift+x while the cursor is in the field with the image (cmd+shift+x on a Mac). For an image or sound file to work, a file with the exact same file name must be in the collection.media folder.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="splitting-a-field-into-multiple-fields"><a class="header" href="#splitting-a-field-into-multiple-fields">Splitting a field into multiple fields</a></h1>
-<p>Sometimes you may create a deck, or download a shared deck, with several things in one field, such as text and audio, but then later decide that you would rather have the information in two fields so that you can have more precise control over what displays on each card. One option is to add a new field and then manually cut and paste the content between fields; this may be the fastest if you have less than a hundred cards or so, but otherwise it will be very tedious and slow. Here is a method you can use based on exporting to a text file and doing a search and replace; as an example, we'll focus on </p>
+<p>Sometimes you may create a deck, or download a shared deck, with several things in one field, such as text and audio, but then later decide that you would rather have the information in two fields so that you can have more precise control over what displays on each card. One option is to add a new field and then manually cut and paste the content between fields; this may be the fastest if you have less than a hundred cards or so, but otherwise it will be very tedious and slow. Here is a method you can use based on exporting to a text file and doing a search and replace; as an example, we'll focus on</p>
 <ol>
 <li>If the field you want to split is the first field, make a different field the first field by using the <strong>Reposition</strong> button in the Fields dialog.. This field needs to be unique, so that no two cards have the same content in that field. If you don't have any unique fields except the one you're trying to split, you can use the <a href="https://ankiweb.net/shared/info/1672832404">add note ID</a> add-on to add a unique field to the notes.</li>
 <li>Export the entire deck to a text file, using the <strong>Notes in plain text</strong> choice.</li>
@@ -605,14 +605,14 @@ A: A giraffe.
 <p>See also <a href="https://faqs.ankiweb.net/how-do-i-move-cards-between-decks.html?highlight=mergin#how-do-i-move-cards-between-decks">How do I move cards between decks?</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="shared-decks-with-broken-javascript"><a class="header" href="#shared-decks-with-broken-javascript">Shared decks with broken Javascript</a></h1>
 <p>Some shared decks make use of a feature called 'Javascript', which allows them to dynamically modify the display of the card. Javascript can be fragile, which is why the Anki manual recommends deck authors avoid it. It may break when Anki is updated, or when the deck author has not tested their Javascript on the different Anki platforms.</p>
-<p>If you encounter a Javascript error in a shared deck, please post a review on the shared deck download page to let the deck author and other users know of the problem. If the deck author is active, they will hopefully address 
+<p>If you encounter a Javascript error in a shared deck, please post a review on the shared deck download page to let the deck author and other users know of the problem. If the deck author is active, they will hopefully address
 the issue in a future update.</p>
 <p>If the deck author is unable to help you, you can try edit your card template to remove the Javascript to prevent an error from showing. Depending on what the Javascript was doing, this may result in lost functionality.</p>
 <p>To do so, using the computer version of Anki:</p>
 <ul>
 <li>Use File&gt;Export to export your entire collection with scheduling information. This will give you a backup that you can restore to if anything goes wrong.</li>
 <li>Edit a card, and click the Cards... button.</li>
-<li>Look for areas in the front and back template that start with  <code>&lt;script&gt;</code> and end with <code>&lt;/script&gt;</code>. Remove the start and end, and everything in between.</li>
+<li>Look for areas in the front and back template that start with <code>&lt;script&gt;</code> and end with <code>&lt;/script&gt;</code>. Remove the start and end, and everything in between.</li>
 <li>Confirm that the card displays in the review screen without error. If it's working ok, you can sync your changes to AnkiWeb and then to your other devices.</li>
 <li>If removing the script has completely broken the card, use File&gt;Import to restore to the backup you created.</li>
 </ul>
@@ -938,7 +938,7 @@ if (states.good.normal?.review) {
 <div style="break-before: page; page-break-before: always;"></div><h1 id="timezone-handling-changes"><a class="header" href="#timezone-handling-changes">Timezone handling changes</a></h1>
 <p>Anki 2.1.22+, AnkiMobile 2.0.57+, and AnkiDroid 2.15+ contain an optional change to the way Anki calculates the elapsed number of days. This change addresses some corner cases where timezone changes (including daylight savings) could cause Anki to move back or forward a day, and addresses cards being unburied / daily counts being reset for some users when syncing with AnkiWeb.</p>
 <p>For most users, the new calculation should produce the same number of elapsed days as the old calculation. For some users, enabling this code may move Anki forward or back by one day, but this will only happen once, and Anki should be more robust against timezone changes afterwards.</p>
-<p><strong>Please make sure you are running the above-mentioned versions prior to enabling the new code.</strong> If any of your Anki clients have not been updated yet, you won't be able to sync them while this feature is enabled. </p>
+<p><strong>Please make sure you are running the above-mentioned versions prior to enabling the new code.</strong> If any of your Anki clients have not been updated yet, you won't be able to sync them while this feature is enabled.</p>
 <p>To enable the new calculation, please make sure:</p>
 <ul>
 <li>your devices are in sync</li>
@@ -1007,27 +1007,27 @@ Moves the card back to the first step setted in <a href="https://docs.ankiweb.ne
 </li>
 <li>
 <p>Hard<br />
-Repeats the current step after the first step, and is the average of 
+Repeats the current step after the first step, and is the average of
 Again and Good.</p>
 </li>
 <li>
 <p>Good<br />
-Moves the card to the <a href="https://docs.ankiweb.net/deck-options.html?#learning-steps">next step</a>. 
-If the card was on the final step, the card is converted into a 
+Moves the card to the <a href="https://docs.ankiweb.net/deck-options.html?#learning-steps">next step</a>.
+If the card was on the final step, the card is converted into a
 review card (it 'graduates').</p>
 </li>
 <li>
 <p>Easy
-Immediately converts the card into a review card. </p>
+Immediately converts the card into a review card.</p>
 </li>
 </ul>
 <p>New cards have no ease, so no matter how many times you press
-'Again' or 'Hard', the future ease factor of the card won't be affected. 
-The same can be said about relearning cards: pressing 'Again' 
-or 'Hard' won't have any effect over the card's ease. </p>
+'Again' or 'Hard', the future ease factor of the card won't be affected.
+The same can be said about relearning cards: pressing 'Again'
+or 'Hard' won't have any effect over the card's ease.</p>
 <h2 id="review-cards"><a class="header" href="#review-cards">Review Cards</a></h2>
 <p>Once a card is graduated, it gets an ease factor. By default is 2.5, but you
-can set another value using the <a href="https://docs.ankiweb.net/deck-options.html?#starting-ease">Deck Options</a>. </p>
+can set another value using the <a href="https://docs.ankiweb.net/deck-options.html?#starting-ease">Deck Options</a>.</p>
 <p>If you press…​</p>
 <ul>
 <li>
@@ -1106,7 +1106,7 @@ not exist in SuperMemo’s proprietary implementation.</p>
 <p>If your AnkiWeb account expires, only the AnkiWeb copy of your data is deleted. Any cards you have stored on your computer, phone or tablet will remain on those devices.</p>
 <h2 id="returning-to-ankiweb-after-your-data-has-expired"><a class="header" href="#returning-to-ankiweb-after-your-data-has-expired">Returning to AnkiWeb after your data has expired</a></h2>
 <p>If your account data was deleted due to inactivity, you may still be able to recover that data if you have a copy on your computer or mobile device. You can confirm this by opening Anki or AnkiMobile/AnkiDroid to see if your data is still there. If you had data on your device but accidentally overwrote it in a sync, you may be able to recover it from an <a href="https://anki.tenderapp.com/kb/problems/restoring-an-automatic-backup-recovering-from-data-loss">automatic backup</a></p>
-<p>If you'd like to start syncing that data with AnkiWeb again, please start by logging in to ankiweb.net using your Anki ID. If you receive a message that no such account exists, you'll need to sign up again first - you can use the same email address as before if you wish. </p>
+<p>If you'd like to start syncing that data with AnkiWeb again, please start by logging in to ankiweb.net using your Anki ID. If you receive a message that no such account exists, you'll need to sign up again first - you can use the same email address as before if you wish.</p>
 <p>Once you have a valid AnkiWeb login, you can sync your computer or mobile device, enter your details, and then choose &quot;Upload&quot; to send your data back to AnkiWeb. Please make sure to upload, as choosing download would overwrite your local content with your empty AnkiWeb collection.</p>
 <h2 id="avoiding-account-deletion"><a class="header" href="#avoiding-account-deletion">Avoiding account deletion</a></h2>
 <p>Each time you visit ankiweb.net, or use the synchronisation feature in Anki, AnkiMobile or AnkiDroid, your account will automatically be marked as active. The mobile clients do not sync automatically, so simply using them to study will not result in your AnkiWeb account being marked active unless you use the sync button.</p>
@@ -1170,7 +1170,7 @@ email we send.</p>
 بمجرد عرض هذه الرسالة، فإنها تشير إلى أن جميع ملفات الوسائط قد تم نقلها من أو إلى جهازك، ويجب أن تعمل الوسائط بعد ذلك أثناء الدراسة.</p>
 <h2 id="أنكي-موبايل"><a class="header" href="#أنكي-موبايل">أنكي موبايل</a></h2>
 <p>إذا أوقفت تشغيل شاشة جهازك، أو انتقلت إلى تطبيق مختلف، فسيؤدي ذلك إلى مقاطعة المزامنة. عند المزامنة مرة أخرى، سيتم استئناف التنزيل من حيث توقف.</p>
-<p>إذا كان لديك الكثير من الوسائط، فقد تستغرق المزامنة الأولية بعض الوقت. 
+<p>إذا كان لديك الكثير من الوسائط، فقد تستغرق المزامنة الأولية بعض الوقت.
 أنكي موبايل 2.0.64+ سيبقي الشاشة قيد التشغيل أثناء عرض شاشة مزامنة الوسائط. الإصدارات الأقدم لا تقدم هذا.
 لذلك إذا كنت تستخدم إصدارًا أقدم وتركت جهازك دون اهتمام، فقد يتم إيقاف تشغيل الشاشة، مما يؤدي إلى مقاطعة المزامنة.
 يمكنك التحقق من الإصدار الذي تقوم بتشغيله في شاشة التفضيلات &gt; حول. إذا كنت تستخدم إصدارًا أقدم، فيمكنك تنزيل التحديث المجاني من خلال البحث عن AnkiMobile في متجر التطبيقات.</p>
@@ -1223,7 +1223,7 @@ email we send.</p>
 <p>Some other program on your computer is likely capturing the shortcut. For example, some users have recently reported that their AMD/ATI video card software is stealing the cloze deletion shortcut key. When they disable the shortcut in that program's preferences, the key starts working in Anki again.</p>
 <p>If you run into similar problems, please try temporarily closing/turning off other software running on your machine, until you discover the cause.</p>
 <p>If you use add-ons in Anki, please also try disabling them to rule them out as the cause of the problem.</p>
-<p>In some cases, using a non-English keyboard layout may cause the problem. </p>
+<p>In some cases, using a non-English keyboard layout may cause the problem.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="anki-must-be-able-to-connect-to-a-local-port"><a class="header" href="#anki-must-be-able-to-connect-to-a-local-port">Anki must be able to connect to a local port</a></h1>
 <p>When Anki 2.1 starts up, it listens on a port on localhost for requests from the user interface. If you have a proxy server configured on your machine, please go into your proxy settings and make sure that &quot;bypass proxy server for local addresses&quot; is enabled - otherwise Anki's user interface will have its local communication redirected through the proxy, which will prevent Anki from functioning.</p>
 <p>More info: <a href="https://superuser.com/a/261434">https://superuser.com/a/261434</a></p>
@@ -1345,7 +1345,7 @@ images, but it requires some setup:
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="why-does-ankimobile-cost-more-than-a-typical-mobile-app"><a class="header" href="#why-does-ankimobile-cost-more-than-a-typical-mobile-app">Why does AnkiMobile cost more than a typical mobile app?</a></h1>
 <p>AnkiMobile is not a standalone app - it is intended to be used in conjunction with the online synchronization service and open source computer version that I've made available for free for the last 10 years. Working on these three platforms is a full time job, and AnkiMobile is my way of putting food on the table and supporting future development.</p>
-<p>Because there are so many $1 apps out there, some people are surprised by the price. But when you factor in the computer version, synchronization service, and free updates, AnkiMobile's price is quite competitive. At the time of writing (2013-10-04), SuperMemo's computer+iPhone version will set you back $60, and MentalCase's combo will cost you $29.95. </p>
+<p>Because there are so many $1 apps out there, some people are surprised by the price. But when you factor in the computer version, synchronization service, and free updates, AnkiMobile's price is quite competitive. At the time of writing (2013-10-04), SuperMemo's computer+iPhone version will set you back $60, and MentalCase's combo will cost you $29.95.</p>
 <p>Whether you find AnkiMobile's price to be a good deal will ultimately depend on your needs. If you're an existing Anki user that has invested many hours studying on the computer, AnkiMobile provides an easy way to do your studies anywhere while taking advantage of the advanced scheduling and formatting features that Anki provides. On the other hand, if you're looking for something inexpensive and simple and don't mind being restricted to your Apple device, there are cheaper alternatives out there that you may want to consider.</p>
 <p>One other thing to note is that once purchased, you can use AnkiMobile on up to 5 of your iOS devices, provided they use the same Apple ID. AnkiMobile also supports family sharing, for families that have that set up.</p>
 <p>Some frequently asked questions:</p>
@@ -1366,7 +1366,7 @@ images, but it requires some setup:
 <p>The Android version is developed by a different group of people, who based it off the computer version I wrote. Because they have day jobs and can only work on it in their free time, AnkiMobile is better supported: no questions or bug reports go unanswered, the app is more polished, and most bugs get fixed quickly.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ankiapp-is-not-part-of-the-anki-ecosystem"><a class="header" href="#ankiapp-is-not-part-of-the-anki-ecosystem">AnkiApp is not part of the Anki ecosystem</a></h1>
 <p>The program called AnkiApp was developed by a separate group of people, and is not related to the rest of the Anki ecosystem. It was released years after Anki was already established in the marketplace, and we suspect the name was deliberately chosen to take advantage of the brand recognition we have built up. Using Anki in the name implies that it will function with the other Anki clients, which it does not.</p>
-<p>If you have downloaded AnkiApp in error, please consider leaving a review on the app store alerting people to the fact that AnkiApp is not connected to Anki. </p>
+<p>If you have downloaded AnkiApp in error, please consider leaving a review on the app store alerting people to the fact that AnkiApp is not connected to Anki.</p>
 <p>The Anki ecosystem is made up of Anki, AnkiMobile, AnkiDroid, and AnkiWeb, all of which are linked from our official website: <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a></p>
 <p><strong>Importing from AnkiApp - New Approach</strong></p>
 <p>Abdo has kindly published <a href="https://ankiweb.net/shared/info/2072125761">an add-on</a> to help you import your AnkiApp decks into Anki. This is the recommended method, as it
@@ -1407,7 +1407,7 @@ can export their data. For that reason, the add-on approach above is recommended
 <p>We make a <em>flashcard program</em> called Anki. If you are having problems with a robot you bought from a <em>company</em> called Anki, please go to <a href="https://support.anki.com/hc/en-us/requests/new">https://support.anki.com/hc/en-us/requests/new</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="anki-20-support-has-ended"><a class="header" href="#anki-20-support-has-ended">Anki 2.0 support has ended</a></h1>
 <h2 id="anki-1"><a class="header" href="#anki-1">Anki</a></h2>
-<p>Update 1 Jun 2020: An upstream SSL certificate has expired, and this has broken syncing for the remaining users on 2.0. </p>
+<p>Update 1 Jun 2020: An upstream SSL certificate has expired, and this has broken syncing for the remaining users on 2.0.</p>
 <p>On Feb 1 2020, AnkiWeb received a security update that broke syncing for some Anki 2.0 users. The tools Anki 2.0 was built on are no longer receiving bugfixes or security updates, and there is a risk that Anki 2.0 will stop working without warning. For this reason, we highly recommend you start migrating to Anki 2.1.</p>
 <p>Syncing with Anki 2.1.x will continue to function. If you have not updated to Anki 2.1.x yet, upgrading is as simple as installing it on your computer, as Anki 2.0.x and 2.1.x use the same file format. You can even switch back and forth if you install 2.0 and 2.1 in separate locations - though please make sure to use the <a href="https://changes.ankiweb.net">Downgrade</a> button if you're using the latest Anki.</p>
 <p>For information on the changes in Anki 2.1, please see <a href="https://changes.ankiweb.net/changes/2.1.html">https://changes.ankiweb.net/changes/2.1.html</a></p>
@@ -1457,8 +1457,7 @@ take time to set up and maintain, as we need to ensure no laws are being broken,
 and relevant taxes are being paid. At the moment we feel that the time is better
 spent working on Anki instead.</p>
 <p>If you're unable to purchase the app for yourself or a friend, there are still
-other ways you can contribute. Answering questions over on the <a href="https://forums.ankiweb.net">user
-forums</a> is a big help, as every question the
+other ways you can contribute. Answering questions over on the <a href="https://forums.ankiweb.net">user forums</a> is a big help, as every question the
 developers don't need to answer means more time that can be spent working on
 Anki. And if you don't feel comfortable answering questions, telling your
 friends about Anki helps out too.</p>

@@ -143,14 +143,14 @@
                     <main>
                         <h1 id="shared-decks-with-broken-javascript"><a class="header" href="#shared-decks-with-broken-javascript">Shared decks with broken Javascript</a></h1>
 <p>Some shared decks make use of a feature called 'Javascript', which allows them to dynamically modify the display of the card. Javascript can be fragile, which is why the Anki manual recommends deck authors avoid it. It may break when Anki is updated, or when the deck author has not tested their Javascript on the different Anki platforms.</p>
-<p>If you encounter a Javascript error in a shared deck, please post a review on the shared deck download page to let the deck author and other users know of the problem. If the deck author is active, they will hopefully address 
+<p>If you encounter a Javascript error in a shared deck, please post a review on the shared deck download page to let the deck author and other users know of the problem. If the deck author is active, they will hopefully address
 the issue in a future update.</p>
 <p>If the deck author is unable to help you, you can try edit your card template to remove the Javascript to prevent an error from showing. Depending on what the Javascript was doing, this may result in lost functionality.</p>
 <p>To do so, using the computer version of Anki:</p>
 <ul>
 <li>Use File&gt;Export to export your entire collection with scheduling information. This will give you a backup that you can restore to if anything goes wrong.</li>
 <li>Edit a card, and click the Cards... button.</li>
-<li>Look for areas in the front and back template that start with  <code>&lt;script&gt;</code> and end with <code>&lt;/script&gt;</code>. Remove the start and end, and everything in between.</li>
+<li>Look for areas in the front and back template that start with <code>&lt;script&gt;</code> and end with <code>&lt;/script&gt;</code>. Remove the start and end, and everything in between.</li>
 <li>Confirm that the card displays in the review screen without error. If it's working ok, you can sync your changes to AnkiWeb and then to your other devices.</li>
 <li>If removing the script has completely broken the card, use File&gt;Import to restore to the backup you created.</li>
 </ul>

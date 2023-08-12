@@ -164,9 +164,9 @@
 <pre><code>{{حقل}}
 </code></pre>
 <p><strong>ينقص <span dir=ltr>{{/حقل}}</span></strong></p>
-<p>يعني هذا أن أنكي وجد <span dir=ltr><code>{{#حقل}}</code></span> أو <span dir=ltr><code>{{^حقل}}</code></span> في القالب،
-بدون <span dir=ltr><code>{{/حقل}}</code></span> مرافقة.
-حذف <span dir=ltr><code>{{#حقل}}</code></span> أو <span dir=ltr><code>{{^حقل}}</code></span> من القالب سيصلح المشكلة.</p>
+<p>يعني هذا أن أنكي وجد <span dir=ltr> <code>{{#حقل}}</code></span> أو <span dir=ltr> <code>{{^حقل}}</code></span> في القالب،
+بدون <span dir=ltr> <code>{{/حقل}}</code></span> مرافقة.
+حذف <span dir=ltr> <code>{{#حقل}}</code></span> أو <span dir=ltr> <code>{{^حقل}}</code></span> من القالب سيصلح المشكلة.</p>
 <p><strong>وجد <span dir=ltr>{{/واحد}}</span>, لكن توقع <span dir=ltr>{{/اثنان}}</span></strong></p>
 <p>استبدالات الحقول الشرطية يجب أن تغلق بالترتيب نفسه التي فتحت به. مثلا، القالب التالي خاطئ:</p>
 <pre><code>{{#واحد}}
@@ -184,7 +184,7 @@
 </code></pre>
 <p><strong>وجد <span dir=ltr>{{/حقل}}</span>, لكن ينقص '<span dir=ltr>{{#حقل}}</span>' أو '<span dir=ltr>{{^حقل}}</span>'</strong></p>
 <p>يجب أن تسبق الوسوم المغلقة بوسوم مفتوحة. مثلا، التعبير التالي غير صالح،
-لأنه ليس هناك <span dir=ltr><code>{{#اثنان}}</code></span> or <span dir=ltr><code>{{^اثنان}}</code></span> في البداية:</p>
+لأنه ليس هناك <span dir=ltr> <code>{{#اثنان}}</code></span> or <span dir=ltr> <code>{{^اثنان}}</code></span> في البداية:</p>
 <pre><code>  {{حقل}}
 {{/اثنان}}
 </code></pre>
