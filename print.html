@@ -242,7 +242,7 @@
 (يأخذ أنكي موبيل نسخ احتياطية بعد فواصل زمنية ثابتة وقبل المزامنة)، ويحتفظ بـ 30 نسخة بشكل افتراضي.
 لمزيد من المعلومات حول الاسترجاع من نسخة احتياطية أوتوماتيكية، يرجى زيارة الصفحة المناسبة:</p>
 <ul>
-<li>استعادة <a href="https://www.abdnh.net/anki-manual/files.html#%D8%A7%D9%84%D9%86%D8%B3%D8%AE-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%8A%D8%A7%D8%B7%D9%8A%D8%A9">نسخة احتياطية مأخوذة في أنكي 2.1 على حاسوبك</a>.</li>
+<li>استعادة <a href="https://www.abdnh.net/anki-manual/files.html#backups">نسخة احتياطية مأخوذة في أنكي 2.1 على حاسوبك</a>.</li>
 <li>استعادة <a href="https://docs.ankimobile.net/preferences.html#backups">نسخة مأخوذة في أنكي موبيل</a>.</li>
 <li>استعادة <a href="https://docs.ankidroid.org/manual-ar.html#backups">نسخة مأخوذة في أنكيدرويد</a>.</li>
 </ul>
@@ -290,7 +290,7 @@
 حيث تُسأل عن كل معلومة <em>في بطاقات منفصلة</em>، فمثلا قد تظهر لك بطاقة الكلمة وتطلب منك تعريفها،
 وقد تظهر بطاقة أخرى جملة مع فراغ مكان الكلمة وتسألك عن الكلمة المناسبة، وما إلى ذلك.</p>
 <p>في بعض الحالات، قد ترغب في تضمين معلومات غير أساسية في بطاقة بدون إظهارها إلا عندما تحتاجها.
-يوفر أنكي <a href="https://www.abdnh.net/anki-manual/templates/fields.html#%D8%AD%D9%82%D9%88%D9%84-%D8%AA%D9%84%D9%85%D9%8A%D8%AD%D9%8A%D8%A9">الحقول التلميحية</a> لهذه الحالة.</p>
+يوفر أنكي <a href="https://www.abdnh.net/anki-manual/templates/fields.html#hint-fields">الحقول التلميحية</a> لهذه الحالة.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="هناك-مشكلة-في-قالب-البطاقات"><a class="header" href="#هناك-مشكلة-في-قالب-البطاقات">هناك مشكلة في قالب البطاقات</a></h1>
 <p>أصبح أنكي مؤخرا أكثر صرامة بخصوص الإبلاغ عن الأخطاء في قوالب البطاقات. في الماضي كان فقط
 يتجاهل بعض المشاكل بصمت، ويعرض القوالب بطرق غير متوقعة. تم تغيير هذا لجعل كشف الأخطاء أسهل.</p>
@@ -927,7 +927,7 @@ if (states.good.normal?.review) {
 أنكي موبيل يدعمه أيضا، وقد يدعمه أنكي ويب وأنكيدرويد في المستقبل أيضًا.
 سيسمح هذا للمستخدمين المتقدمين بإجراء تغييرات على سلوك الجدولة العادي بطريقة
 تعمل على كل المنصات.</p>
-<p>حالات الجدولة المختلفة مشروحة <a href="https://github.com/ankitects/anki/blob/9edac805adfe285cc92ed04dfeeffc1d1813c4d0/rslib/backend.proto#L1454">هنا</a>.</p>
+<p>حالات الجدولة المختلفة مشروحة <a href="https://github.com/ankitects/anki/blob/main/proto/anki/scheduler.proto">هنا</a>.</p>
 <h2 id="الاستقرارية"><a class="header" href="#الاستقرارية">الاستقرارية</a></h2>
 <p>نجح المجدول الجديد بتخطي معظم الاختبارات المستخدمة لاختبار المجدولات القديمة
 (في الحالات التي يكون فيها سلوك المجدولات متطابقًا)، وقد تلقى انطباعات جيدة حتى الآن،
@@ -1080,8 +1080,7 @@ greatest scheduler is a higher priority than the things that Anki brings
 to the table, you may want to check out SuperMemo to see if it is a good
 fit for you.</p>
 <h2 id="what-about-sm-5"><a class="header" href="#what-about-sm-5">What about SM-5?</a></h2>
-<p>Anki’s scheduler was originally based on
-<a href="https://www.supermemo.com/english/ol/sm5.htm">SM-5</a>. Anki’s default of
+<p>Anki’s scheduler was originally based on SM-5. Anki’s default of
 showing the next interval above each ease button revealed problems with
 the implementation - harder cards could end up with greater interval
 increases than easy ones, and the ease factors sometimes grew to the
@@ -1209,7 +1208,7 @@ email we send.</p>
 </ul>
 <p>Once installed, you should use mtr to access 'ankiweb.net', and let it run for about 15 minutes. If any of the steps between your device and the AnkiWeb servers show a packet loss above 0%, it indicates instability.</p>
 <p>If you are seeing no packet loss at all but are still having problems syncing, you may be having a different problem - please contact us and let us know.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="a-hrefsounds-or-images-are-not-appearing-on-ankiweb-or-the-mobile-clientshtmlsoundsimages-are-not-appearing-on-ankiweb-or-the-mobile-clientsالصوتيات-أو-الصور-لا-تظهر-على-ankiweb-أو-التطبيقات-المحمولةa"><a class="header" href="#a-hrefsounds-or-images-are-not-appearing-on-ankiweb-or-the-mobile-clientshtmlsoundsimages-are-not-appearing-on-ankiweb-or-the-mobile-clientsالصوتيات-أو-الصور-لا-تظهر-على-ankiweb-أو-التطبيقات-المحمولةa"><a href="sounds-or-images-are-not-appearing-on-ankiweb-or-the-mobile-clients.html#soundsimages-are-not-appearing-on-ankiweb-or-the-mobile-clients">الصوتيات أو الصور لا تظهر على AnkiWeb أو التطبيقات المحمولة</a></a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="الصوتيات-أو-الصور-لا-تظهر-على-ankiweb-أو-التطبيقات-المحمولة"><a class="header" href="#الصوتيات-أو-الصور-لا-تظهر-على-ankiweb-أو-التطبيقات-المحمولة">الصوتيات أو الصور لا تظهر على AnkiWeb أو التطبيقات المحمولة</a></h1>
 <p>إذا قمت بإنشاء رزمة البطاقات الخاصة بك عن طريق استيرادها من ملف نصي، أو قمت بتنزيل رزمة بطاقات مشتركة تم إنشاؤها بهذه الطريقة، فمن الممكن أن تختلف أسماء الملفات في Anki عن أسماء الملفات على الكمبيوتر. بعض الكمبيوترات تعامل ملفات &quot;file.jpg&quot; و&quot;file.JPG&quot; و &quot;FILE.JPG&quot; كملف واحد، بينما لا تعامل الكثير من الأجهزة بهذا الشكل. وهذا يعني أنه إذا كان هناك إشارة لـ &quot;dog.jpg&quot; في الرزمة وكان اسم الملف على القرص الصلب هو &quot;dog.JPG&quot;، فقد لا تتمكن بعض الأجهزة (بما في ذلك AnkiWeb) من عرض الصورة.</p>
 <p>يمكنك التأكد من هذه المشكلة من خلال تحرير بطاقة لا تظهر بشكل صحيح باستخدام إصدار الكمبيوتر. إذا لم يعمل الصوت، سترى رابطًا مثل <code>[sound:hello.mp3]</code>. إذا رأيت رابطًا معطوبًا للصورة، فانقر فوق هذا الحقل، ثم اضغط على السهم الأسفل على اليمين، واختر &quot;تحرير HTML&quot;، ثم ابحث عن النص الذي يشبه:</p>
 <pre><code class="language-html">&lt;img src=&quot;cat.jpg&quot; /&gt;
@@ -1327,8 +1326,6 @@ uses do not have a way of detecting which images need to be resized. Resizing
 the images prior to adding them to Anki will allow you to mix and match other
 images, but it requires some setup:
 <a href="https://www.quora.com/How-can-I-get-my-retina-Mac-to-not-take-screenshots-that-are-too-big">https://www.quora.com/How-can-I-get-my-retina-Mac-to-not-take-screenshots-that-are-too-big</a></p>
-<p>If you're on Windows, an Anki user suggested using SnagIt as a workaround:
-<a href="https://anki.tenderapp.com/discussions/ankidesktop/38152-feature-request-de-zoom-picture-pasted-with-a-certain-hotkey">https://anki.tenderapp.com/discussions/ankidesktop/38152-feature-request-de-zoom-picture-pasted-with-a-certain-hotkey</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="requesting-a-refund-for-ankimobile"><a class="header" href="#requesting-a-refund-for-ankimobile">Requesting a refund for AnkiMobile</a></h1>
 <p>If you're having problems with AnkiMobile, please let us know and we'll do our best to help you resolve them.</p>
 <p>When you purchase items on the app store, Apple sell the product to you. As we are not involved in the sales process, we do not have the ability to offer you a refund as we have no access to your payment details - Apple does not even tell us who is purchasing the app. For this reason, any refund requests need to be submitted to Apple directly. Please see the following page for more information:</p>
@@ -1404,7 +1401,7 @@ can export their data. For that reason, the add-on approach above is recommended
 <p>You may wish to consider using the official Anki version from <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a> instead.</p>
 <p>If you wish to continue using AnkiUniversal, please direct any questions you have to the AnkiUniversal authors: ankiuniversal@gmail.com</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="we-do-not-make-robots"><a class="header" href="#we-do-not-make-robots">We do not make robots</a></h1>
-<p>We make a <em>flashcard program</em> called Anki. If you are having problems with a robot you bought from a <em>company</em> called Anki, please go to <a href="https://support.anki.com/hc/en-us/requests/new">https://support.anki.com/hc/en-us/requests/new</a></p>
+<p>We make a <em>flashcard program</em> called Anki. If you are having problems with a robot you bought from a <em>company</em> called Anki, please go to <a href="https://support.digitaldreamlabs.com/">https://support.digitaldreamlabs.com/</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="anki-20-support-has-ended"><a class="header" href="#anki-20-support-has-ended">Anki 2.0 support has ended</a></h1>
 <h2 id="anki-1"><a class="header" href="#anki-1">Anki</a></h2>
 <p>Update 1 Jun 2020: An upstream SSL certificate has expired, and this has broken syncing for the remaining users on 2.0.</p>
