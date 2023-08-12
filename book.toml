@@ -18,4 +18,4 @@ optional = true
 warning-policy = "warn"
 follow-web-links = true
 # quora dislikes bots
-exclude = [ 'quora\.com' ]
+exclude = ['quora\.com']

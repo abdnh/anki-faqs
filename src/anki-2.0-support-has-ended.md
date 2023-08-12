@@ -2,7 +2,7 @@
 
 <h2>Anki</h2>
 
-Update 1 Jun 2020: An upstream SSL certificate has expired, and this has broken syncing for the remaining users on 2.0. 
+Update 1 Jun 2020: An upstream SSL certificate has expired, and this has broken syncing for the remaining users on 2.0.
 
 On Feb 1 2020, AnkiWeb received a security update that broke syncing for some Anki 2.0 users. The tools Anki 2.0 was built on are no longer receiving bugfixes or security updates, and there is a risk that Anki 2.0 will stop working without warning. For this reason, we highly recommend you start migrating to Anki 2.1.
 

@@ -6,7 +6,7 @@ When downloading a shared deck from AnkiWeb, the number of included sounds and i
 
 If you've downloaded a shared deck from somewhere other than AnkiWeb and media files are not working, please contact the sharer for assistance.
 
-*Brosencephalon*
+_Brosencephalon_
 
 We've received a number of questions about this deck. Some Googling revealed the following:
 

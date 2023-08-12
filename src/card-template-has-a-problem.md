@@ -36,9 +36,9 @@
 
 **ينقص <span dir=ltr>{{/حقل}}</span>**
 
-يعني هذا أن أنكي وجد <span dir=ltr>`{{#حقل}}`</span> أو <span dir=ltr>`{{^حقل}}`</span> في القالب،
-بدون <span dir=ltr>`{{/حقل}}`</span> مرافقة.
-حذف <span dir=ltr>`{{#حقل}}`</span> أو <span dir=ltr>`{{^حقل}}`</span> من القالب سيصلح المشكلة.
+يعني هذا أن أنكي وجد <span dir=ltr> `{{#حقل}}`</span> أو <span dir=ltr> `{{^حقل}}`</span> في القالب،
+بدون <span dir=ltr> `{{/حقل}}`</span> مرافقة.
+حذف <span dir=ltr> `{{#حقل}}`</span> أو <span dir=ltr> `{{^حقل}}`</span> من القالب سيصلح المشكلة.
 
 **وجد <span dir=ltr>{{/واحد}}</span>, لكن توقع <span dir=ltr>{{/اثنان}}</span>**
 
@@ -65,7 +65,7 @@
 **وجد <span dir=ltr>{{/حقل}}</span>, لكن ينقص '<span dir=ltr>{{#حقل}}</span>' أو '<span dir=ltr>{{^حقل}}</span>'**
 
 يجب أن تسبق الوسوم المغلقة بوسوم مفتوحة. مثلا، التعبير التالي غير صالح،
-لأنه ليس هناك <span dir=ltr>`{{#اثنان}}`</span> or <span dir=ltr>`{{^اثنان}}`</span> في البداية:
+لأنه ليس هناك <span dir=ltr> `{{#اثنان}}`</span> or <span dir=ltr> `{{^اثنان}}`</span> في البداية:
 
 ```
   {{حقل}}
