@@ -44,7 +44,7 @@
 # Scheduling
 
 - [Anki's not showing me all my cards!](./anki-is-not-showing-me-all-my-cards.md)
-- [Due times after a break](./due-times-after-a-break.md)
+- [أوقات الاستحقاق بعد الانقطاع](./due-times-after-a-break.md)
 - [Extra copies of a card are coming up](./extra-copies-of-a-card-are-coming-up.md)
 - [Hard/good interval is longer than good/easy](./hard-good-interval-longer-than-good-easy.md)
 - [أنا ذاهب في عطلة. هل يمكنني إيقاف جدولة البطاقات؟](./i-am-going-on-vacation-can-i-pause-the-scheduler.md)
