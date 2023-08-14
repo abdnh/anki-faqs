@@ -90,7 +90,7 @@
 
 - [Requesting a refund for AnkiMobile](./requesting-a-refund-for-ankimobile.md)
 - [Retrieving AnkiMobile crash logs](./retrieving-ankimobile-crash-logs.md)
-- [Why does AnkiMobile cost more than a typical mobile app?](./why-does-ankimobile-cost-more-than-a-typical-mobile-app.md)
+- [لماذا يكلف AnkiMobile أكثر من تطبيقات الجوال الاعتيادية؟](./why-does-ankimobile-cost-more-than-a-typical-mobile-app.md)
 
 ---
 
