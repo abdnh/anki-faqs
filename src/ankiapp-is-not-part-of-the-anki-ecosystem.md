@@ -1,53 +1,49 @@
-# AnkiApp is not part of the Anki ecosystem
+# AnkiApp ليس جزءًا من برامج أنكي
 
-The program called AnkiApp was developed by a separate group of people, and is not related to the rest of the Anki ecosystem. It was released years after Anki was already established in the marketplace, and we suspect the name was deliberately chosen to take advantage of the brand recognition we have built up. Using Anki in the name implies that it will function with the other Anki clients, which it does not.
+تم تطوير برنامج يسمى AnkiApp من قبل مجموعة من الأشخاص المنفصلين، ولا يرتبط ببقية برامج Anki. تم إصداره بعد سنوات من تأسس Anki في السوق، ونحن نشتبه في أن الاسم تم اختياره عمدًا للاستفادة من العلامة التجارية التي بنيناها. استخدام Anki في الاسم يعطي انطباع أنه يعمل مع البرامج الأخرى لـ Anki، وهذا لا يحدث.
 
-If you have downloaded AnkiApp in error, please consider leaving a review on the app store alerting people to the fact that AnkiApp is not connected to Anki.
+إذا نزلت AnkiApp عن طريق الخطأ، يرجى النظر في ترك مراجعة في متجر التطبيقات لتنبيه الناس إلى حقيقة عدم ارتباط AnkiApp بـ Anki.
 
-The Anki ecosystem is made up of Anki, AnkiMobile, AnkiDroid, and AnkiWeb, all of which are linked from our official website: <https://apps.ankiweb.net>
+يتكون نظام Anki من Anki و AnkiMobile و AnkiDroid و AnkiWeb، والتي توجد روابطها جميعًا في موقعنا الرسمي: [https://apps.ankiweb.net](https://apps.ankiweb.net)
 
-**Importing from AnkiApp - New Approach**
+**الاستيراد من AnkiApp - الطريقة الجديدة**
 
-Abdo has kindly published [an add-on](https://ankiweb.net/shared/info/2072125761) to help you import your AnkiApp decks into Anki. This is the recommended method, as it
-doesn't require you to pay the AnkiApp developers money to access your data. As an added
-bonus, it's easier than the old approach.
+نشر عبدو [إضافة](https://ankiweb.net/shared/info/2072125761) للمساعدة في استيراد رزم AnkiApp إلى Anki. هذه هي الطريقة الموصى بها، فهي لا تتطلب منك دفع مال لمطوري AnkiApp للوصول إلى بياناتك. علاوة على أن هذه الطريقة أسهل من الطريقة القديمة.
 
-**Importing from AnkiApp - Old Approach**
+**الاستيراد من AnkiApp - الطريقة القديمة**
 
-The approach below relies on the export feature of AnkiApp. The AnkiApp developers have recently
-taken that feature aware from free users, requiring users to pay for a subscription before they
-can export their data. For that reason, the add-on approach above is recommended instead. But for posterity, the old instructions are below:
+تعتمد الطريقة التالية على ميزة التصدير في AnkiApp. قام مطورو AnkiApp مؤخرًا بسلب هذه الميزة من المستخدمين المجانيين، مما يتطلب من المستخدمين الدفع مقابل اشتراك قبل أن يتمكنوا من تصدير بياناتهم. لهذا السبب، يوصى بالطريقة الجديدة المذكورة أعلاه. لكن بغرض التوثيق، يمكن الاطلاع على التعليمات القديمة أدناه:
 
-If you have accidentally added content to AnkiApp, you may be able to move it over to Anki. Study progress can't be imported, but basic text and images can be:
+إذا أضفت محتوى بطريقة غير مقصودة إلى AnkiApp ، فقد تستطيع نقله إلى Anki. لا يمكن استيراد تقدم الدراسة ، ولكن يمكن استيراد النصوص الأساسية والصور:
 
-1. Export from AnkiApp, which gives you a .zip file
-2. Unzip the file somewhere - you will get a fields.csv file and any media files.
-3. Use File>Import in Anki to import the fields.csv file. In the Import window, ensure the "Allow HTML in fields" checkbox is enabled.
+1. صدر من AnkiApp لتحصل على ملف <span dir=ltr>.zip</span>
+2. فك ضغط الملف في مكان ما. ستحصل على ملف fields.csv وملفات الوسائط.
+3. استخدم ملف&gt;استيراد في Anki لاستيراد ملف fields.csv. في نافذة الاستيراد، تأكد من تمكين خيار "السماح بـ HTML في الحقول".
 
-If the file contained images, those image references need to be changed to a format Anki understands. Select all the cards you imported in the Browse window of Anki, and use the Edit>Find&Replace menu item. Then replace:
+إذا كان الملف يحتوي على صور ، فيجب تغيير مراجع الصور تلك إلى تنسيق يفهمه Anki. حدد جميع البطاقات التي تم استيرادها في نافذة التصفح في Anki ، واستخدم عنصر القائمة تحرير&gt;بحث واستبدال. ثم استبدل:
 
 ```html
 {{
 ```
 
-with
+بـ
 
 ```html
 <img src="
 ```
 
-Then do another Find&Replace, replacing
+ثم أجر عملية استبدال أخرى، مستبدلًا
 
 ```html
 }}
 ```
 
-with
+بـ
 
 ```html
 ">
 ```
 
-Finally, you'll need to move the image files that you extracted from the zip file into the User 1/collection.media folder:
+أخيرًا ، ستحتاج إلى نقل ملفات الصور التي استخرجتها من ملف الضغط إلى مجلد <span dir=ltr>User 1/collection.media folder</span>:
 
-<https://docs.ankiweb.net/files.html#file-locations>
+<https://www.abdnh.net/anki-manual/files.html#file-locations>
