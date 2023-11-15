@@ -14,7 +14,7 @@
 - [البطاقات معكوسة / تظهر مرتين](./cards-are-reversed-appearing-twice.md)
 - [الحروف مقصوصة](./characters-are-cut-off.md)
 - [تخصيص MathJax](./customizing-mathjax.md)
-- [Errors when recording](./errors-when-recording.md)
+- [أخطاء عند تسجيل الصوت](./errors-when-recording.md)
 - [Extra characters appearing on cards](./extra-characters-appearing-on-cards.md)
 - [Multiple choice questions](./multiple-choice-questions.md)
 - [No cloze found on card](./no-cloze-found-on-card.md)

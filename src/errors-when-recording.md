@@ -1,11 +1,12 @@
-# Errors when recording
+# أخطاء عند تسجيل الصوت
 
-If you have problems recording audio in Anki, please make sure:
+إذا كنت تواجه مشكلات عند تسجيل الصوت في Anki، فيرجى التأكد من أن:
 
-- a microphone is connected to the computer
-- the microphone is set as the default recording device in your system's sound settings
-- another program like Skype is not using the microphone - you may need to close the other microphone-using program. If that does not help, please try restarting your computer.
+- الميكروفون متصل بالكمبيوتر
+- تم تعيين الميكروفون كجهاز تسجيل افتراضي في إعدادات الصوت في جهازك
+- برنامجًا آخر مثل Skype لا يستخدم الميكروفون. قد تحتاج إلى إغلاق البرنامج الآخر الذي يستخدم الميكروفون. إذا لم يساعد ذلك، فيرجى محاولة إعادة تشغيل جهاز الكمبيوتر الخاص بك.
 
-If you receive the message `IOError: [Errno Unanticipated host error] -9999` on Windows 10, please make sure you have allowed Anki to use the microphone:
+
+إذا تلقيت الرسالة `IOError: [Errno Unanticipated host error] -9999` على نظام التشغيل Windows 10، فيرجى التأكد من أنك سمحت لـAnki باستخدام الميكروفون:
 
 <https://winaero.com/blog/disable-app-access-microphone-windows-10/>
