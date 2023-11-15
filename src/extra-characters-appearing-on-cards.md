@@ -1,13 +1,14 @@
-# Extra characters appearing on cards
+# ظهور أحرف إضافية في البطاقات
 
-Sometimes users notice that text is appearing in front of or on their cards that they don't remember putting there. Usually it is just a couple of letters or nonsense. For instance, on the front side of your card you have written `book`, but when you review the card it appears as `fybook`.
+في بعض الأحيان يلاحظ المستخدمون أن هناك نصًا في بطاقاتهم لا يذكرون كتابته. عادة ما تكون مجرد بضع حروف أو كلام لا معنى له.
+فمثلًا كتبت في الجانب الأمامي لبطاقة `book` لكنها ظهرت كـ `fybook` عند المراجعة.
 
-This problem is caused by accidentally placing text in the card template. You can solve it as follows:
+تحدث هذه المشكلة عند وضع نص في قالب البطاقة عن طريق الخطأ. يمكنك حلها على النحو التالي:
 
-1. While reviewing with the computer version, locate one of the cards that has the problem, and edit it. (Alternatively, search for one in the browser.)
-2. Click the Cards button.
-3. Look in the Front Template box (or, if the text is appearing on the back of the card, the Back Template box). You should see the extra text in there somewhere. Being careful not to delete anything else, remove it.
+1. أثناء المراجعة باستخدام إصدار الكمبيوتر، جد إحدى البطاقات التي تعاني من المشكلة، وحررها. (أو ابحث عن البطاقة في المتصفح.)
+2. انقر فوق زر بطاقات.
+3. ابحث في مربع القالب الأمامي (أو القالب الخلفي إذا كان النص يظهر في الخلف). يجب أن ترى النص الإضافي هناك في مكان ما. احذفه مع الحرص على عدم حذف أي شيء آخر.
 
-After you close the Cards dialog, your cards should appear as normal again.
+بعد إغلاق نافذة البطاقات، يجب أن تظهر بطاقاتك كالمعتاد مرة أخرى.
 
-If you don't have access to the computer version, you can study such a card in AnkiMobile, then tap on Tools>More>Edit Card Template.
+إذا لم يكن لديك وصول إلى إصدار الكمبيوتر، فيمكنك دراسة مثل هذه البطاقة في AnkiMobile، ثم النقر فوق أدوات > المزيد > تحرير قالب البطاقة.

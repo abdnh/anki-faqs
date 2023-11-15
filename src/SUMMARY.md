@@ -15,7 +15,7 @@
 - [الحروف مقصوصة](./characters-are-cut-off.md)
 - [تخصيص MathJax](./customizing-mathjax.md)
 - [أخطاء عند تسجيل الصوت](./errors-when-recording.md)
-- [Extra characters appearing on cards](./extra-characters-appearing-on-cards.md)
+- [ظهور أحرف إضافية في البطاقات](./extra-characters-appearing-on-cards.md)
 - [Multiple choice questions](./multiple-choice-questions.md)
 - [No cloze found on card](./no-cloze-found-on-card.md)
 - [Note types with strange names](./note-types-with-strange-names.md)
